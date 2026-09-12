@@ -1,0 +1,3697 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+ content="width=device-width, initial-scale=1">
+<title>ATU-YA · Яна Афанасьева —
+ясновидение, Таро, чакроанализ,
+матрица судьбы</title>
+<style>
+:root{
+ --bg:#0a0407;
+ --wine:#5a0f20;
+ --wine3:#a01c33;
+ --gold:#d9b26a;
+ --gold2:#f2dcae;
+ --cream:#f4e9dc;
+ --muted:#c3a9a2;
+ --line:rgba(217,178,106,.28);
+ --serif:Georgia,'Times New Roman',serif;
+ --sans:Arial,Helvetica,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;
+ font-family:var(--sans);
+ color:var(--cream);
+ background:var(--bg);
+ line-height:1.65;
+}
+body::before{
+ content:"";
+ position:fixed;
+ inset:0;
+ z-index:-2;
+ background:
+  radial-gradient(1000px 600px at 12% -5%,
+   rgba(160,28,51,.3),transparent 62%),
+  radial-gradient(900px 560px at 92% 8%,
+   rgba(90,15,32,.45),transparent 60%),
+  radial-gradient(1100px 800px at 50% 110%,
+   rgba(125,20,40,.3),transparent 65%),
+  repeating-linear-gradient(112deg,
+   rgba(255,255,255,.016) 0 2px,
+   transparent 2px 7px),
+  linear-gradient(180deg,#0a0407,#15070e,#0a0407);
+}
+body::after{
+ content:"";
+ position:fixed;
+ inset:0;
+ z-index:-1;
+ opacity:.28;
+ mix-blend-mode:overlay;
+ background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E");
+}
+::selection{background:var(--wine3);color:#fff}
+h1,h2,h3,h4{
+ margin:0;
+ font-family:var(--serif);
+ font-weight:600;
+}
+a{color:var(--gold)}
+img{max-width:100%;display:block}
+.wrap{width:min(1200px,92vw);margin:0 auto}
+section{padding:90px 0;position:relative}
+.center{text-align:center}
+.eyebrow{
+ display:inline-block;
+ font-size:12px;
+ letter-spacing:.32em;
+ text-transform:uppercase;
+ color:var(--gold);
+ margin-bottom:12px;
+}
+.sec-title{
+ font-size:clamp(30px,4.4vw,50px);
+ line-height:1.1;
+}
+.sec-title em{color:var(--gold2)}
+.sec-sub{
+ color:var(--muted);
+ max-width:760px;
+ margin:14px auto 0;
+ font-size:16px;
+}
+.ornament{
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:14px;
+ margin:24px 0 44px;
+ color:var(--gold);
+}
+.ornament i{
+ height:1px;
+ width:min(150px,26vw);
+ background:linear-gradient(90deg,
+  transparent,var(--line));
+}
+.ornament i:last-child{
+ background:linear-gradient(90deg,
+  var(--line),transparent);
+}
+.ornament svg{width:24px;height:24px}
+.btn{
+ display:inline-flex;
+ align-items:center;
+ gap:10px;
+ padding:14px 26px;
+ border:1px solid var(--gold);
+ background:linear-gradient(135deg,
+  var(--gold2),var(--gold));
+ color:#1a0409;
+ text-decoration:none;
+ font-size:12px;
+ font-weight:700;
+ letter-spacing:.16em;
+ text-transform:uppercase;
+ cursor:pointer;
+ position:relative;
+ overflow:hidden;
+}
+.btn:hover{transform:translateY(-3px)}
+.btn.ghost{
+ background:none;
+ color:var(--gold);
+ border-color:var(--line);
+}
+.btn.ghost:hover{
+ color:#fff;
+ border-color:var(--gold);
+}
+.btn.wine{
+ background:linear-gradient(135deg,
+  var(--wine3),var(--wine));
+ color:#ffe9ee;
+}
+.btn.sm{padding:10px 18px;font-size:11px}
+header{
+ position:fixed;
+ top:0;left:0;right:0;
+ z-index:60;
+ background:rgba(10,4,7,.88);
+ backdrop-filter:blur(12px);
+ border-bottom:1px solid var(--line);
+}
+.nav{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ gap:16px;
+ padding:12px 0;
+}
+.logo{
+ display:flex;
+ align-items:center;
+ gap:10px;
+ text-decoration:none;
+}
+.logo-mark{
+ width:42px;height:42px;
+ border-radius:50%;
+ display:grid;place-items:center;
+ background:radial-gradient(circle at 32% 28%,
+  var(--wine3),var(--wine) 55%,#2b0611);
+ border:1px solid var(--line);
+}
+.logo-mark svg{width:22px;height:22px}
+.logo b{
+ display:block;
+ font-family:var(--serif);
+ font-size:20px;
+ letter-spacing:.14em;
+ color:var(--gold2);
+}
+.logo span{
+ font-size:9px;
+ letter-spacing:.3em;
+ text-transform:uppercase;
+ color:var(--muted);
+}
+.menu{
+ display:flex;
+ gap:2px;
+ list-style:none;
+ margin:0;padding:0;
+}
+.menu a,.menu button{
+ background:none;border:0;
+ color:var(--muted);
+ font-size:12px;
+ letter-spacing:.13em;
+ text-transform:uppercase;
+ text-decoration:none;
+ padding:10px 12px;
+ cursor:pointer;
+ font-family:var(--sans);
+}
+.menu a:hover,.menu button:hover,
+.menu a.on{color:var(--gold2)}
+.burger{
+ display:none;
+ width:42px;height:42px;
+ border:1px solid var(--line);
+ background:rgba(90,15,32,.35);
+ cursor:pointer;
+}
+.burger span{
+ display:block;
+ width:18px;height:1.5px;
+ background:var(--gold);
+ margin:4px auto;
+}
+.hero{
+ min-height:100vh;
+ display:flex;
+ align-items:center;
+ padding:140px 0 80px;
+}
+.hero-grid{
+ display:grid;
+ grid-template-columns:1.05fr .95fr;
+ gap:56px;
+ align-items:center;
+}
+.hero h1{
+ font-size:clamp(40px,6.5vw,78px);
+ line-height:1.02;
+ margin:8px 0 0;
+}
+.hero h1 em{color:var(--gold2)}
+.lead{
+ color:var(--muted);
+ font-size:17px;
+ max-width:540px;
+ margin:20px 0 6px;
+}
+.tags{margin:22px 0 30px}
+.tag{
+ display:inline-block;
+ margin:3px;
+ padding:7px 13px;
+ border:1px solid var(--line);
+ border-radius:99px;
+ font-size:11px;
+ letter-spacing:.14em;
+ text-transform:uppercase;
+ color:var(--gold2);
+ background:rgba(90,15,32,.25);
+}
+.hero-meta{
+ display:flex;
+ gap:28px;
+ flex-wrap:wrap;
+ margin-top:36px;
+ padding-top:24px;
+ border-top:1px solid var(--line);
+}
+.hero-meta span{
+ display:block;
+ font-size:10px;
+ letter-spacing:.26em;
+ text-transform:uppercase;
+ color:var(--muted);
+}
+.hero-meta b{
+ font-family:var(--serif);
+ font-size:22px;
+ color:var(--gold2);
+}
+.portrait{
+ position:relative;
+ width:min(420px,86vw);
+ aspect-ratio:3/4;
+ margin:0 auto;
+ border-radius:210px 210px 12px 12px;
+ overflow:hidden;
+ border:1px solid var(--line);
+ background:radial-gradient(circle at 50% 20%,
+  rgba(160,28,51,.55),#150710 70%);
+ box-shadow:0 40px 90px -40px #000;
+}
+.portrait img{
+ width:100%;height:100%;
+ object-fit:cover;
+ object-position:50% 22%;
+}
+.p-fb{
+ position:absolute;inset:0;
+ display:none;
+ place-items:center;
+ font-family:var(--serif);
+ font-size:100px;
+ color:var(--wine3);
+}
+.p-name{
+ position:absolute;
+ left:0;right:0;bottom:22px;
+ text-align:center;
+}
+.p-name b{
+ font-family:var(--serif);
+ font-size:24px;
+ letter-spacing:.14em;
+ color:var(--gold2);
+ display:block;
+}
+.p-name span{
+ font-size:10px;
+ letter-spacing:.3em;
+ text-transform:uppercase;
+ color:var(--muted);
+}
+.grid{display:grid;gap:22px}
+.g4{grid-template-columns:repeat(4,1fr)}
+.g3{grid-template-columns:repeat(3,1fr)}
+.g2{grid-template-columns:repeat(2,1fr)}
+.card{
+ position:relative;
+ border:1px solid rgba(217,178,106,.18);
+ background:linear-gradient(165deg,
+  rgba(28,9,17,.92),rgba(10,4,7,.94));
+ padding:26px 22px;
+ display:flex;
+ flex-direction:column;
+ gap:11px;
+ transition:transform .4s,border-color .4s;
+}
+.card:hover{
+ transform:translateY(-7px);
+ border-color:rgba(217,178,106,.45);
+}
+.card-icon{
+ width:60px;height:60px;
+ border-radius:50%;
+ display:grid;place-items:center;
+ background:radial-gradient(circle at 34% 30%,
+  rgba(160,28,51,.9),rgba(43,6,17,.95));
+ border:1px solid var(--line);
+}
+.card-icon svg{width:30px;height:30px;color:var(--gold2)}
+.card h3{font-size:23px;line-height:1.2}
+.card p{margin:0;color:var(--muted);font-size:14px}
+.card ul{
+ margin:2px 0 0;
+ padding-left:18px;
+ color:var(--muted);
+ font-size:13px;
+}
+.card ul li{margin-bottom:4px}
+.price{
+ margin-top:auto;
+ padding-top:14px;
+ border-top:1px solid var(--line);
+}
+.price>b{
+ display:block;
+ font-family:var(--serif);
+ font-size:29px;
+ color:var(--gold2);
+ line-height:1.1;
+}
+.price>span{
+ display:block;
+ font-size:10px;
+ letter-spacing:.2em;
+ text-transform:uppercase;
+ color:var(--muted);
+ margin-bottom:8px;
+}
+.px{
+ list-style:none;
+ margin:0;padding:0;
+}
+.px li{
+ display:flex;
+ justify-content:space-between;
+ gap:10px;
+ font-size:12.5px;
+ color:#b79a94;
+ border-bottom:1px dotted var(--line);
+ padding-bottom:4px;
+ margin-bottom:4px;
+}
+.px b{color:var(--gold2);white-space:nowrap}
+.tariffs{display:grid;gap:10px}
+.tariff{
+ text-align:left;
+ border:1px solid rgba(217,178,106,.2);
+ background:rgba(10,4,7,.5);
+ padding:13px;
+ cursor:pointer;
+ color:inherit;
+ font-family:var(--sans);
+ position:relative;
+}
+.tariff:hover{border-color:var(--gold)}
+.tariff.sel{
+ border-color:var(--gold);
+ background:rgba(160,28,51,.3);
+}
+.tt{
+ display:flex;
+ justify-content:space-between;
+ gap:10px;
+}
+.tt b{font-family:var(--serif);font-size:19px}
+.tt i{
+ font-style:normal;
+ font-family:var(--serif);
+ font-size:21px;
+ color:var(--gold2);
+ white-space:nowrap;
+}
+.tariff small{
+ display:block;
+ color:var(--muted);
+ font-size:12.5px;
+ margin-top:5px;
+}
+.badge{
+ position:absolute;
+ top:-9px;right:10px;
+ font-size:9px;
+ letter-spacing:.16em;
+ text-transform:uppercase;
+ background:linear-gradient(135deg,
+  var(--gold2),var(--gold));
+ color:#2a0710;
+ padding:3px 9px;
+ border-radius:99px;
+ font-weight:700;
+}
+.modes{
+ display:flex;
+ gap:10px;
+ justify-content:center;
+ flex-wrap:wrap;
+ margin-bottom:22px;
+}
+.mode{
+ cursor:pointer;
+ border:1px solid var(--line);
+ background:rgba(20,7,16,.75);
+ color:var(--muted);
+ padding:11px 20px;
+ border-radius:99px;
+ font-size:12px;
+ letter-spacing:.14em;
+ text-transform:uppercase;
+ font-weight:700;
+ font-family:var(--sans);
+}
+.mode.on{
+ background:linear-gradient(135deg,
+  var(--wine3),var(--wine));
+ color:#fff;
+ border-color:transparent;
+}
+.dbar{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:12px;
+ flex-wrap:wrap;
+ padding:13px 18px;
+ border:1px solid var(--line);
+ background:rgba(10,4,7,.6);
+ margin-bottom:24px;
+}
+.dbar .st{
+ font-size:12px;
+ letter-spacing:.14em;
+ text-transform:uppercase;
+ color:var(--muted);
+}
+.dbar .st b{
+ font-family:var(--serif);
+ font-size:20px;
+ color:var(--gold2);
+}
+.fan{
+ display:grid;
+ grid-template-columns:
+  repeat(auto-fill,minmax(58px,1fr));
+ gap:8px;
+}
+.bk{
+ aspect-ratio:2/3.2;
+ border:1px solid rgba(217,178,106,.26);
+ border-radius:4px;
+ cursor:pointer;
+ background:
+  radial-gradient(circle at 50% 28%,
+   rgba(160,28,51,.5),transparent 62%),
+  repeating-conic-gradient(from 0deg,
+   rgba(217,178,106,.09) 0 7deg,
+   transparent 7deg 14deg),
+  linear-gradient(165deg,#2c0b16,#12060c);
+ display:grid;place-items:center;
+ color:rgba(217,178,106,.55);
+ transition:transform .3s,border-color .3s;
+}
+.bk:hover{
+ transform:translateY(-7px);
+ border-color:var(--gold);
+}
+.bk.off{opacity:.2;pointer-events:none}
+.reading{
+ margin-top:34px;
+ border:1px solid var(--line);
+ padding:30px;
+ background:linear-gradient(150deg,
+  rgba(90,15,32,.3),rgba(10,4,7,.78));
+}
+.reading h3{
+ font-size:27px;
+ color:var(--gold2);
+ margin-bottom:6px;
+}
+.rempty{color:var(--muted);font-size:15px}
+.slots{
+ display:flex;
+ gap:20px;
+ flex-wrap:wrap;
+ margin-top:24px;
+}
+.slot{width:180px}
+.slot .pos{
+ font-size:10px;
+ letter-spacing:.22em;
+ text-transform:uppercase;
+ color:var(--gold);
+ text-align:center;
+ margin-bottom:9px;
+}
+.fc{
+ width:100%;
+ aspect-ratio:2/3.2;
+ border:1px solid rgba(217,178,106,.45);
+ border-radius:5px;
+ background:
+  radial-gradient(circle at 50% 18%,
+   rgba(160,28,51,.55),transparent 62%),
+  linear-gradient(165deg,#2a0a15,#12060c);
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:space-between;
+ padding:11px 7px;
+ text-align:center;
+ cursor:pointer;
+}
+.fc .num{
+ font-family:var(--serif);
+ font-size:16px;
+ color:var(--gold);
+}
+.fc .nm{
+ font-family:var(--serif);
+ font-size:15px;
+}
+.fc .su{
+ font-size:9px;
+ letter-spacing:.16em;
+ text-transform:uppercase;
+ color:var(--muted);
+}
+.fc svg{width:56px;height:56px;color:var(--gold2)}
+.fc.rev .fi{transform:rotate(180deg)}
+.fi{
+ display:flex;
+ flex-direction:column;
+ align-items:center;
+ justify-content:space-between;
+ height:100%;width:100%;
+}
+.rd{
+ border-left:2px solid var(--wine3);
+ padding-left:16px;
+ margin-top:16px;
+}
+.rd b{
+ display:block;
+ font-family:var(--serif);
+ font-size:20px;
+ margin-bottom:3px;
+}
+.rd p{margin:0;color:var(--muted);font-size:14px}
+.rd.rev{border-left-color:#8e3a51}
+.rd.rev b{color:#c98ea0}
+.rd.adv{border-left-color:var(--gold)}
+.rd.adv b{color:var(--gold2)}
+.hint{
+ font-size:12px;
+ color:#9d8480;
+ margin-top:12px;
+}
+.daily{
+ margin-top:42px;
+ border:1px solid var(--line);
+ padding:32px;
+ display:grid;
+ grid-template-columns:auto 1fr;
+ gap:30px;
+ align-items:center;
+ background:linear-gradient(150deg,
+  rgba(90,15,32,.3),rgba(10,4,7,.75));
+}
+.dcard{width:150px}
+.album{
+ display:grid;
+ grid-template-columns:110px 1fr;
+ gap:18px;
+ align-items:center;
+ border:1px solid rgba(217,178,106,.2);
+ padding:16px;
+ background:linear-gradient(140deg,
+  rgba(28,9,17,.9),rgba(10,4,7,.85));
+ margin-bottom:18px;
+}
+.art{
+ aspect-ratio:1;
+ border:1px solid var(--line);
+ display:grid;place-items:center;
+}
+.art svg{width:50%;height:50%;color:var(--gold2)}
+.album h4{font-size:22px}
+.album p{margin:4px 0 10px;font-size:13px;color:var(--muted)}
+.tracks{
+ border:1px solid rgba(217,178,106,.2);
+ background:rgba(10,4,7,.6);
+}
+.thead{
+ padding:16px 20px;
+ border-bottom:1px solid var(--line);
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:12px;
+ flex-wrap:wrap;
+}
+.thead b{font-family:var(--serif);font-size:21px;color:var(--gold2)}
+.track{
+ display:grid;
+ grid-template-columns:42px 1fr auto;
+ gap:14px;
+ align-items:center;
+ padding:14px 20px;
+ border-bottom:1px solid rgba(217,178,106,.1);
+ cursor:pointer;
+}
+.track:last-child{border-bottom:0}
+.track:hover{background:rgba(90,15,32,.3)}
+.track.play{
+ background:linear-gradient(90deg,
+  rgba(160,28,51,.4),transparent);
+}
+.pl{
+ width:42px;height:42px;
+ border-radius:50%;
+ display:grid;place-items:center;
+ border:1px solid var(--line);
+ background:radial-gradient(circle at 34% 30%,
+  var(--wine3),#2b0611);
+ color:var(--gold2);
+}
+.pl svg{width:15px;height:15px}
+.track b{
+ display:block;
+ font-family:var(--serif);
+ font-size:18px;
+}
+.track span{font-size:12px;color:var(--muted)}
+.eq{
+ display:flex;
+ align-items:flex-end;
+ gap:3px;height:18px;
+ opacity:0;
+}
+.track.play .eq{opacity:1}
+.eq i{
+ width:3px;
+ background:var(--gold);
+ animation:eq .9s infinite;
+}
+.eq i:nth-child(2){animation-delay:.15s}
+.eq i:nth-child(3){animation-delay:.3s}
+@keyframes eq{
+ 0%,100%{height:6px}
+ 50%{height:18px}
+}
+.ppanel{
+ margin-top:20px;
+ border:1px solid var(--line);
+ display:none;
+ background:rgba(10,4,7,.8);
+}
+.ppanel.on{display:block}
+.ppanel iframe{
+ width:100%;height:220px;
+ border:0;display:block;
+}
+.pbar{
+ display:flex;
+ justify-content:space-between;
+ align-items:center;
+ gap:12px;
+ flex-wrap:wrap;
+ padding:12px 16px;
+ border-top:1px solid var(--line);
+}
+.pbar small{color:var(--muted);font-size:12px}
+.post{
+ border:1px solid rgba(217,178,106,.18);
+ padding:26px 28px;
+ background:linear-gradient(155deg,
+  rgba(28,9,17,.88),rgba(10,4,7,.9));
+ margin-bottom:22px;
+}
+.phead{
+ display:flex;
+ justify-content:space-between;
+ gap:14px;
+ flex-wrap:wrap;
+ margin-bottom:8px;
+}
+.phead h3{font-size:25px;color:var(--gold2)}
+.pdate{
+ font-size:11px;
+ letter-spacing:.18em;
+ text-transform:uppercase;
+ color:var(--muted);
+ padding-top:6px;
+}
+.paudio{
+ display:inline-flex;
+ gap:9px;
+ align-items:center;
+ margin:8px 0 12px;
+ padding:8px 15px;
+ border:1px solid var(--line);
+ border-radius:99px;
+ background:rgba(90,15,32,.3);
+ font-size:12.5px;
+ color:var(--gold2);
+}
+.pbody{color:var(--muted);font-size:15px}
+.pbody p{margin:0 0 12px}
+.pbody.col{
+ max-height:170px;
+ overflow:hidden;
+ position:relative;
+}
+.pbody.col::after{
+ content:"";
+ position:absolute;
+ left:0;right:0;bottom:0;
+ height:90px;
+ background:linear-gradient(transparent,
+  rgba(10,4,7,.98));
+}
+.ptags{margin-top:12px}
+.ptags span{
+ display:inline-block;
+ font-size:11px;
+ color:#a98f8a;
+ border:1px solid rgba(217,178,106,.12);
+ padding:4px 10px;
+ border-radius:99px;
+ margin:2px;
+}
+.pfoot{
+ display:flex;
+ gap:12px;
+ flex-wrap:wrap;
+ margin-top:16px;
+}
+.rm{
+ background:none;border:0;
+ color:var(--gold);
+ cursor:pointer;
+ font-size:12px;
+ letter-spacing:.14em;
+ text-transform:uppercase;
+ font-weight:700;
+ border-bottom:1px dashed var(--line);
+ font-family:var(--sans);
+}
+.contact{
+ border:1px solid var(--line);
+ padding:48px;
+ background:
+  radial-gradient(700px 300px at 15% 0%,
+   rgba(160,28,51,.45),transparent 70%),
+  linear-gradient(160deg,
+   rgba(24,8,15,.95),rgba(9,3,6,.96));
+}
+.cgrid{
+ display:grid;
+ grid-template-columns:1.1fr .9fr;
+ gap:40px;
+}
+.clist{
+ list-style:none;
+ margin:22px 0 28px;
+ padding:0;
+ display:grid;
+ gap:13px;
+}
+.clist li{
+ display:flex;
+ gap:12px;
+ align-items:center;
+ font-size:15px;
+}
+.clist svg{
+ width:19px;height:19px;
+ color:var(--gold);
+ flex:none;
+}
+.clist a{color:var(--cream);text-decoration:none}
+.form{display:grid;gap:13px}
+.form label{
+ font-size:11px;
+ letter-spacing:.22em;
+ text-transform:uppercase;
+ color:var(--muted);
+}
+.form input,.form select,.form textarea{
+ width:100%;
+ padding:13px 15px;
+ background:rgba(10,4,7,.85);
+ border:1px solid rgba(217,178,106,.24);
+ color:var(--cream);
+ font-family:var(--sans);
+ font-size:14px;
+ margin-top:6px;
+}
+.form textarea{min-height:90px;resize:vertical}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+footer{
+ border-top:1px solid var(--line);
+ padding:48px 0 30px;
+ background:rgba(6,2,4,.7);
+}
+.fgrid{
+ display:grid;
+ grid-template-columns:1.4fr 1fr 1fr 1fr;
+ gap:32px;
+}
+.fgrid h4{
+ font-size:12px;
+ letter-spacing:.24em;
+ text-transform:uppercase;
+ color:var(--gold);
+ font-family:var(--sans);
+ margin-bottom:14px;
+}
+.fgrid ul{
+ list-style:none;
+ margin:0;padding:0;
+ display:grid;gap:8px;
+}
+.fgrid a,.fgrid button{
+ color:var(--muted);
+ text-decoration:none;
+ font-size:13.5px;
+ background:none;border:0;
+ padding:0;cursor:pointer;
+ font-family:var(--sans);
+ text-align:left;
+}
+.fgrid a:hover,.fgrid button:hover{color:var(--gold2)}
+.fbot{
+ margin-top:34px;
+ padding-top:20px;
+ border-top:1px solid rgba(217,178,106,.12);
+ display:flex;
+ justify-content:space-between;
+ gap:14px;
+ flex-wrap:wrap;
+ color:#8d7a76;
+ font-size:12.5px;
+}
+.page{display:none}
+.page.on{display:block}
+.rstats{
+ display:grid;
+ grid-template-columns:repeat(4,1fr);
+ gap:16px;
+ margin:34px 0 8px;
+}
+.rstat{
+ border:1px solid rgba(217,178,106,.18);
+ padding:20px;
+ text-align:center;
+ background:linear-gradient(160deg,
+  rgba(28,9,17,.9),rgba(10,4,7,.9));
+}
+.rstat b{
+ display:block;
+ font-family:var(--serif);
+ font-size:34px;
+ color:var(--gold2);
+}
+.rstat span{
+ font-size:10px;
+ letter-spacing:.22em;
+ text-transform:uppercase;
+ color:var(--muted);
+}
+.rfil{
+ display:flex;
+ gap:8px;
+ flex-wrap:wrap;
+ justify-content:center;
+ margin:28px 0;
+}
+.rf{
+ cursor:pointer;
+ border:1px solid var(--line);
+ background:rgba(20,7,16,.7);
+ color:var(--muted);
+ padding:9px 15px;
+ border-radius:99px;
+ font-size:11.5px;
+ letter-spacing:.12em;
+ text-transform:uppercase;
+ font-weight:600;
+ font-family:var(--sans);
+}
+.rf.on{
+ background:linear-gradient(135deg,
+  var(--wine3),var(--wine));
+ color:#fff;
+ border-color:transparent;
+}
+.rmas{
+ display:grid;
+ grid-template-columns:repeat(6,1fr);
+ gap:18px;
+ grid-auto-flow:dense;
+}
+.review{
+ grid-column:span 2;
+ border:1px solid rgba(217,178,106,.18);
+ padding:22px;
+ background:linear-gradient(160deg,
+  rgba(28,9,17,.9),rgba(10,4,7,.92));
+ display:flex;
+ flex-direction:column;
+ gap:11px;
+ position:relative;
+ overflow:hidden;
+}
+.review.s3{grid-column:span 3}
+.review.s4{grid-column:span 4}
+.review.feat{
+ border-color:rgba(217,178,106,.34);
+ background:linear-gradient(150deg,
+  rgba(120,20,40,.42),rgba(10,4,7,.94));
+ padding:30px;
+}
+.review p{margin:0;color:var(--muted);font-size:14.5px}
+.review.feat p{
+ font-family:var(--serif);
+ font-size:18px;
+ color:#e3d3cd;
+}
+.rvh{display:flex;gap:13px;align-items:center}
+.ava{
+ width:46px;height:46px;
+ border-radius:50%;
+ display:grid;place-items:center;
+ font-family:var(--serif);
+ font-size:19px;
+ color:var(--gold2);
+ background:radial-gradient(circle at 34% 30%,
+  var(--wine3),#2b0611);
+ border:1px solid var(--line);
+ flex:none;
+}
+.rvh b{
+ display:block;
+ font-family:var(--serif);
+ font-size:19px;
+}
+.stars{color:var(--gold);letter-spacing:3px;font-size:13px}
+.rvf{
+ margin-top:auto;
+ padding-top:12px;
+ border-top:1px solid rgba(217,178,106,.14);
+ display:flex;
+ justify-content:space-between;
+ gap:10px;
+ flex-wrap:wrap;
+}
+.rvs{
+ font-size:11px;
+ letter-spacing:.12em;
+ text-transform:uppercase;
+ color:var(--gold2);
+ border:1px solid var(--line);
+ padding:4px 10px;
+ border-radius:99px;
+ background:rgba(90,15,32,.3);
+}
+.rvd{font-size:11.5px;color:#8d7a76}
+.fvk{
+ position:fixed;
+ right:20px;bottom:20px;
+ width:58px;height:58px;
+ border-radius:50%;
+ display:grid;place-items:center;
+ background:linear-gradient(135deg,
+  var(--wine3),var(--wine));
+ color:#fff;
+ text-decoration:none;
+ z-index:70;
+ box-shadow:0 18px 40px -16px rgba(160,28,51,.95);
+}
+.fvk svg{width:26px;height:26px}
+.toast{
+ position:fixed;
+ left:50%;bottom:30px;
+ transform:translate(-50%,160%);
+ z-index:120;
+ background:linear-gradient(135deg,#2a0a15,#150710);
+ border:1px solid var(--gold);
+ padding:14px 24px;
+ font-size:14px;
+ max-width:90vw;
+ text-align:center;
+ transition:transform .5s;
+}
+.toast.on{transform:translate(-50%,0)}
+.modal{
+ position:fixed;inset:0;
+ z-index:100;
+ display:none;
+ align-items:center;
+ justify-content:center;
+ padding:20px;
+}
+.modal.on{display:flex}
+.mbg{
+ position:absolute;inset:0;
+ background:rgba(4,1,3,.9);
+}
+.mbox{
+ position:relative;
+ width:min(760px,96vw);
+ max-height:90vh;
+ overflow:auto;
+ border:1px solid var(--line);
+ background:linear-gradient(165deg,#1b0711,#0b0408);
+ padding:34px;
+}
+.mclose{
+ position:absolute;
+ top:10px;right:10px;
+ width:38px;height:38px;
+ border-radius:50%;
+ cursor:pointer;
+ background:rgba(90,15,32,.6);
+ border:1px solid var(--line);
+ color:var(--gold2);
+ font-size:18px;
+}
+.mgrid{
+ display:grid;
+ grid-template-columns:220px 1fr;
+ gap:30px;
+}
+.mrow{
+ margin-top:16px;
+ border-left:2px solid var(--wine3);
+ padding-left:15px;
+}
+.mrow b{
+ display:block;
+ font-family:var(--serif);
+ font-size:19px;
+ margin-bottom:3px;
+}
+.mrow p{margin:0;color:var(--muted);font-size:14px}
+.mrow.rev{border-left-color:#8e3a51}
+.mrow.rev b{color:#c98ea0}
+.mrow.adv{border-left-color:var(--gold)}
+.mrow.adv b{color:var(--gold2)}
+.chips{margin-top:12px}
+.chip{
+ display:inline-block;
+ font-size:11px;
+ padding:5px 11px;
+ border:1px solid var(--line);
+ border-radius:99px;
+ color:var(--gold2);
+ background:rgba(90,15,32,.28);
+ margin:2px;
+}
+.rv{transition:opacity .8s,transform .8s}
+.rv.arm{opacity:0;transform:translateY(30px)}
+.rv.arm.in{opacity:1;transform:none}
+@media(max-width:1080px){
+ .g4,.g2{grid-template-columns:repeat(2,1fr)}
+ .hero-grid,.cgrid,.g3{grid-template-columns:1fr}
+ .rmas{grid-template-columns:repeat(4,1fr)}
+ .review.s4{grid-column:span 4}
+ .fgrid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:860px){
+ .menu{
+  position:fixed;
+  top:0;right:-100%;
+  height:100vh;
+  width:min(300px,84vw);
+  flex-direction:column;
+  align-items:flex-start;
+  justify-content:center;
+  padding:40px 28px;
+  background:#12060c;
+  border-left:1px solid var(--line);
+  transition:right .4s;
+  z-index:55;
+ }
+ .menu.open{right:0}
+ .burger{display:block;z-index:60}
+ .g4{grid-template-columns:1fr}
+ .rmas{grid-template-columns:repeat(2,1fr)}
+ .review,.review.s3,.review.s4{grid-column:span 2}
+ .rstats{grid-template-columns:repeat(2,1fr)}
+ .daily{grid-template-columns:1fr;text-align:center}
+ .dcard{margin:0 auto}
+ .mgrid{grid-template-columns:1fr}
+ .frow{grid-template-columns:1fr}
+ .contact{padding:30px 22px}
+ .fgrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="wrap nav">
+  <a class="logo" href="#home" data-home>
+   <span class="logo-mark">
+    <svg viewBox="0 0 24 24" fill="none"
+     stroke="#f2dcae" stroke-width="1.2">
+     <circle cx="12" cy="12" r="8.2"/>
+     <path d="M12 3.8v16.4M3.8 12h16.4"/>
+     <path d="M6.2 6.2l11.6 11.6"/>
+     <path d="M17.8 6.2L6.2 17.8"/>
+     <circle cx="12" cy="12" r="3.2"/>
+    </svg>
+   </span>
+   <span><b>ATU-YA</b>
+   <span>Яна Афанасьева</span></span>
+  </a>
+  <ul class="menu" id="menu">
+   <li><a href="#about">Обо мне</a></li>
+   <li><a href="#services">Услуги</a></li>
+   <li><a href="#courses">Курсы</a></li>
+   <li><a href="#tarot">Таро</a></li>
+   <li><a href="#music">Музыка</a></li>
+   <li><a href="#posts">Посты</a></li>
+   <li><button data-reviews>Отзывы</button></li>
+   <li><a href="#contact">Контакты</a></li>
+  </ul>
+  <a class="btn sm" target="_blank"
+   href="https://vk.ru/yana_afanaseva86">
+   Написать в ВК</a>
+  <button class="burger" id="burger">
+   <span></span><span></span><span></span>
+  </button>
+ </div>
+</header>
+
+<div id="app">
+
+<section class="hero" id="home">
+ <div class="wrap hero-grid">
+  <div>
+   <div class="eyebrow rv">
+    Ясновидение · Род · Энергия</div>
+   <h1 class="rv">Яна Афанасьева<br><em>ATU-YA</em></h1>
+   <p class="lead rv">Вижу то, что скрыто: родовые
+   сценарии, энергетические блоки, истинные причины
+   того, что происходит в вашей жизни. Работаю
+   честно, глубоко и без «воды».</p>
+   <div class="tags rv">
+    <span class="tag">Отливка воском</span>
+    <span class="tag">Таро</span>
+    <span class="tag">Чакроанализ</span>
+    <span class="tag">Матрица судьбы</span>
+    <span class="tag">Род</span>
+   </div>
+   <div class="rv">
+    <a class="btn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться на консультацию</a>
+    <a class="btn ghost" href="#tarot">
+     Вытянуть карту</a>
+   </div>
+   <div class="hero-meta rv">
+    <div><span>Практика</span><b>с 2016 года</b></div>
+    <div><span>Формат</span><b>Онлайн / лично</b></div>
+    <div><span>Колода</span><b>78 арканов</b></div>
+    <div><span>Учениц</span><b>45+</b></div>
+   </div>
+  </div>
+  <div class="portrait rv">
+   <img src="yana.jpg" alt="Яна Афанасьева"
+    id="yp" onerror="this.style.display='none';
+    document.getElementById('pfb')
+    .style.display='grid';">
+   <div class="p-fb" id="pfb">AY</div>
+   <div class="p-name">
+    <b>ЯНА АФАНАСЬЕВА</b>
+    <span>ATU-YA · практика с 2016</span>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="about">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow rv">Обо мне</div>
+   <h2 class="sec-title rv">Проводник между
+   <em>родом</em> и душой</h2>
+   <div class="ornament rv">
+    <i></i>
+    <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1">
+     <path d="M12 2l2.2 6.6L21 9l-5 4.4"/>
+     <path d="M17.4 21L12 17.2 6.6 21"/>
+     <path d="M8 13.4L3 9l6.8-.4z"/>
+    </svg>
+    <i></i>
+   </div>
+  </div>
+  <div class="g2" style="align-items:start">
+   <div class="card rv">
+    <h3>Чем я занимаюсь</h3>
+    <p>Диагностика и чистка энергетики, работа с
+    родовыми программами, обучение тех, кто готов
+    видеть.</p>
+    <ul>
+     <li>Ясновидение и экстрасенсорная
+     диагностика — вижу ситуацию напрямую</li>
+     <li>Чакроанализ — где течёт энергия,
+     а где стоит блок</li>
+     <li>Матрица судьбы, натальная карта,
+     дизайн человека</li>
+     <li>Работа с Родом: женские сценарии,
+     непрожитая боль, сила предков</li>
+     <li>Отливка воском, программные свечи,
+     чистки и защита</li>
+    </ul>
+    <div class="price">
+     <b>2016</b>
+     <span>год начала практики</span>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Задать вопрос лично</a>
+   </div>
+   <div class="rv">
+    <p style="font-family:var(--serif);
+     font-style:italic;font-size:22px;
+     color:var(--gold2);
+     border-left:2px solid var(--wine3);
+     padding-left:22px">«Вы — не просто роли.
+    Мама, сестра, дочь, жена, коллега, подруга…
+    Вы — души, которые пришли для своего роста,
+    эволюции, опыта и реализации своих задач».</p>
+    <p style="color:var(--muted)">Мой путь начался
+    с собственного рода. Я прошла через родовые
+    женские сценарии и болезни, повторяющиеся из
+    поколения в поколение, и научилась видеть их
+    корни. С 2016 года помогаю женщинам распутывать
+    эти нити — не обвиняя предков, а возвращая себе
+    силу и право жить своей жизнью.</p>
+    <p style="color:var(--muted)">В работе соединяю
+    несколько инструментов: ясновидение, Таро,
+    чакроанализ, матрицу судьбы, натальную карту и
+    дизайн человека. Вместе они дают точную картину:
+    что происходит, почему и что с этим делать.</p>
+    <p style="color:var(--muted)">Отдельная часть
+    жизни — музыкальный проект
+    <b style="color:var(--gold2)">ATU-YA</b>.
+    Треки «Дар Предков», «Не сильная»,
+    «Ты — Огонь» и «Невидимая Нить» — звуковые
+    практики о роде, женской силе и исцелении.</p>
+    <p>
+     <a class="btn" target="_blank"
+      href="https://vk.ru/yana_afanaseva86">
+      Страница ВКонтакте</a>
+     <button class="btn ghost" data-reviews>
+      Читать отзывы</button>
+    </p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="services">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow rv">Услуги</div>
+   <h2 class="sec-title rv">Практики и
+   <em>консультации</em></h2>
+   <p class="sec-sub rv">Восемь инструментов — одна
+   цель: вернуть вам ясность, силу и управление
+   своей жизнью.</p>
+   <div class="ornament rv"><i></i>
+    <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1">
+     <circle cx="12" cy="12" r="9"/>
+     <circle cx="12" cy="12" r="4"/>
+    </svg>
+   <i></i></div>
+  </div>
+  <div class="grid g4">
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <path d="M12 2c2.5 3.5 2.5 7 0 10"/>
+      <path d="M12 2c-2.5 3.5-2.5 7 0 10"/>
+      <path d="M4 14h16v3a8 8 0 01-16 0z"/>
+     </svg>
+    </div>
+    <h3>Отливка воском</h3>
+    <p>Диагностика и чистка натуральным воском:
+    сглаз, испуг, зависть, родовые наслоения.
+    Уходит тяжесть, возвращается ясность.</p>
+    <ul>
+     <li>Снятие негатива и испуга</li>
+     <li>Диагностика по фигурам воска</li>
+     <li>Чистка ребёнка и взрослого</li>
+     <li>Защита после работы</li>
+    </ul>
+    <div class="price">
+     <b>4 500 ₽</b>
+     <span>сессия 60–90 мин</span>
+     <ul class="px">
+      <li><em>Повторная</em><b>4 000 ₽</b></li>
+      <li><em>Чистка ребёнка</em><b>4 500 ₽</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться</a>
+   </div>
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <rect x="3" y="6" width="8" height="14"
+       rx="1.5" transform="rotate(-10 7 13)"/>
+      <rect x="13" y="6" width="8" height="14"
+       rx="1.5" transform="rotate(10 17 13)"/>
+     </svg>
+    </div>
+    <h3>Расклад Таро</h3>
+    <p>Ответ на вопрос без воды: отношения, выбор,
+    работа, деньги, намерения человека. Авторский
+    расклад «Русские сказки».</p>
+    <ul>
+     <li>Одна сфера отношений, денег, работы</li>
+     <li>Полный расклад на ситуацию</li>
+     <li>Чёткий ответ + что делать</li>
+    </ul>
+    <div class="price">
+     <b>3 000 ₽</b>
+     <span>одна сфера · 40–60 мин</span>
+     <ul class="px">
+      <li><em>Полный расклад</em><b>5 500 ₽</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться</a>
+   </div>
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <circle cx="12" cy="4.5" r="2"/>
+      <circle cx="12" cy="8.5" r="2"/>
+      <circle cx="12" cy="12.5" r="2"/>
+      <circle cx="12" cy="16.5" r="2"/>
+      <circle cx="12" cy="20.5" r="2"/>
+     </svg>
+    </div>
+    <h3>Чакроанализ</h3>
+    <p>Сканирование семи энергетических центров:
+    какая сфера проседает, где блок, какие родовые
+    программы и эмоции его держат.</p>
+    <ul>
+     <li>7 чакр — 7 сфер жизни</li>
+     <li>Где блок и чем он создан</li>
+     <li>Связь с родом и здоровьем</li>
+     <li>Практики наполнения</li>
+    </ul>
+    <div class="price">
+     <b>5 000 ₽</b>
+     <span>полный разбор · 90 мин</span>
+     <ul class="px">
+      <li><em>Запись разбора</em><b>входит</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться</a>
+   </div>
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <path d="M12 2l9 5v10l-9 5-9-5V7z"/>
+      <path d="M12 7l4.5 2.5v5L12 17"/>
+      <path d="M12 17l-4.5-2.5v-5L12 7"/>
+     </svg>
+    </div>
+    <h3>Матрица судьбы</h3>
+    <p>Персональный код из 22 арканов по дате
+    рождения: предназначение, кармический хвост,
+    линии рода, финансы, отношения.</p>
+    <ul>
+     <li>Взрослая и детская матрица</li>
+     <li>Кармический хвост и род</li>
+     <li>Как проживать энергии</li>
+    </ul>
+    <div class="price">
+     <b>6 500 ₽</b>
+     <span>взрослая · 2 часа</span>
+     <ul class="px">
+      <li><em>Детская</em><b>3 000 ₽</b></li>
+      <li><em>Совместимость</em><b>4 000 ₽</b></li>
+      <li><em>Детская+взрослая</em><b>7 500 ₽</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться</a>
+   </div>
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <path d="M12 2c2 2.6 2 5 0 7"/>
+      <path d="M12 2c-2 2.6-2 5 0 7"/>
+      <rect x="8" y="9" width="8" height="12"
+       rx="1.5"/>
+     </svg>
+    </div>
+    <h3>Программные свечи</h3>
+    <p>Свеча, заряженная на задачу: чистка, защита,
+    привлечение, гармонизация отношений,
+    восстановление сил.</p>
+    <ul>
+     <li>Чистка и защита</li>
+     <li>Свеча на цель и желание</li>
+     <li>Инструкция по прожигу</li>
+    </ul>
+    <div class="price">
+     <b>от 1 200 ₽</b>
+     <span>одна свеча · под задачу</span>
+     <ul class="px">
+      <li><em>Набор из 3</em><b>3 000 ₽</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Заказать</a>
+   </div>
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M3 12h18M12 3v18"/>
+      <path d="M6 6l12 12M18 6L6 18"/>
+     </svg>
+    </div>
+    <h3>Натальная карта</h3>
+    <p>Астрологический портрет: характер, задачи
+    души, сильные и сложные сферы, периоды подъёма
+    и спада, прогноз.</p>
+    <ul>
+     <li>Характер и потенциал</li>
+     <li>Сферы реализации и деньги</li>
+     <li>Прогноз на год</li>
+    </ul>
+    <div class="price">
+     <b>8 000 ₽</b>
+     <span>разбор 90–120 мин</span>
+     <ul class="px">
+      <li><em>Совместимость</em><b>13 000 ₽</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться</a>
+   </div>
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <rect x="5" y="3" width="14" height="18"
+       rx="2"/>
+      <circle cx="9" cy="8" r="1.6"/>
+      <circle cx="15" cy="8" r="1.6"/>
+      <circle cx="12" cy="13" r="1.6"/>
+      <circle cx="9" cy="18" r="1.6"/>
+      <circle cx="15" cy="18" r="1.6"/>
+     </svg>
+    </div>
+    <h3>Дизайн человека</h3>
+    <p>Тип, профиль, авторитет, открытые и
+    определённые центры: как принимать решения без
+    сопротивления и жить своим механизмом.</p>
+    <ul>
+     <li>Тип, профиль, авторитет</li>
+     <li>Стратегия решений</li>
+     <li>Детский дизайн</li>
+    </ul>
+    <div class="price">
+     <b>9 500 ₽</b>
+     <span>бодиграф + чтение · 2 ч</span>
+     <ul class="px">
+      <li><em>Детский</em><b>5 000 ₽</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться</a>
+   </div>
+   <div class="card rv">
+    <div class="card-icon">
+     <svg viewBox="0 0 24 24" fill="none"
+      stroke="currentColor" stroke-width="1.3">
+      <path d="M2 12s4-6 10-6 10 6 10 6"/>
+      <path d="M2 12s4 6 10 6 10-6 10-6"/>
+      <circle cx="12" cy="12" r="3"/>
+     </svg>
+    </div>
+    <h3>Консультация ясновидения</h3>
+    <p>Смотрю ситуацию напрямую: что происходит на
+    самом деле, кто и как влияет, к чему идёт.
+    Родовые сущности, чужое воздействие.</p>
+    <ul>
+     <li>Видение «здесь и сейчас»</li>
+     <li>Проверка на воздействие</li>
+     <li>Что делать и в какой срок</li>
+    </ul>
+    <div class="price">
+     <b>10 000 ₽</b>
+     <span>60–90 мин · онлайн / лично</span>
+     <ul class="px">
+      <li><em>+ чистка</em><b>+4 500 ₽</b></li>
+     </ul>
+    </div>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться</a>
+   </div>
+  </div>
+  <div class="center rv" style="margin-top:44px">
+   <button class="btn" data-reviews>Отзывы</button>
+   <a class="btn ghost" href="#courses">
+    Курсы и обучение</a>
+  </div>
+ </div>
+</section>
+
+<section id="courses">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow rv">Обучение</div>
+   <h2 class="sec-title rv">Курсы
+   <em>Яны Афанасьевой</em></h2>
+   <p class="sec-sub rv">Выберите тариф — кнопка
+   записи откроет ВКонтакте с нужным курсом.</p>
+   <div class="ornament rv"><i></i>
+    <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1">
+     <path d="M3 8l9-4 9 4-9 4-9-4z"/>
+     <path d="M7 10.5V16c0 1.5 2.5 3 5 3"/>
+     <path d="M17 10.5V16c0 1.5-2.5 3-5 3"/>
+    </svg>
+   <i></i></div>
+  </div>
+  <div class="grid g3">
+   <div class="card rv" data-course="Ясновидение">
+    <h3>Курс «Ясновидение»</h3>
+    <p>8 недель · онлайн. Учимся видеть, а не
+    додумывать: образы, символы, ощущения, техника
+    безопасности и этика.</p>
+    <div class="tariffs">
+     <button class="tariff" data-p="15 000 ₽">
+      <span class="tt"><b>Базовый</b>
+      <i>15 000 ₽</i></span>
+      <small>Без обратной связи: уроки, практики,
+      методички, чат потока, доступ 6 мес.</small>
+     </button>
+     <button class="tariff sel" data-p="25 000 ₽">
+      <span class="badge">выбирают чаще</span>
+      <span class="tt"><b>Продвинутый</b>
+      <i>25 000 ₽</i></span>
+      <small>Проверка каждой домашки, 4 созвона с
+      разбором случаев, сертификат, поддержка
+      3 мес. Ученицы берут клиентов.</small>
+     </button>
+    </div>
+    <a class="btn sm cbtn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться · 25 000 ₽</a>
+   </div>
+   <div class="card rv" data-course="Матрица судьбы">
+    <h3>Курс «Матрица судьбы»</h3>
+    <p>6 недель · онлайн. Профессия матриолога:
+    расчёт и чтение всех зон, род, кармический
+    хвост, разбор клиентов.</p>
+    <div class="tariffs">
+     <button class="tariff" data-p="12 000 ₽">
+      <span class="tt"><b>Базовый</b>
+      <i>12 000 ₽</i></span>
+      <small>Уроки, шаблоны расчёта, методичка по
+      зонам, чат, доступ 6 мес.</small>
+     </button>
+     <button class="tariff sel" data-p="18 000 ₽">
+      <span class="badge">выбирают чаще</span>
+      <span class="tt"><b>Продвинутый</b>
+      <i>18 000 ₽</i></span>
+      <small>Яна проверяет каждый расчёт, 3 реальных
+      клиента, скрипты консультации, сертификат,
+      3 мес. поддержки. Окупается за разбор.</small>
+     </button>
+    </div>
+    <a class="btn sm cbtn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться · 18 000 ₽</a>
+   </div>
+   <div class="card rv" data-course="Чакроанализ">
+    <h3>Курс «Чакроанализ»</h3>
+    <p>5 недель · онлайн. Диагностика чакр, чтение
+    блоков, чистки и наполнение, связь с родом и
+    здоровьем.</p>
+    <div class="tariffs">
+     <button class="tariff" data-p="15 000 ₽">
+      <span class="tt"><b>Без сертификата</b>
+      <i>15 000 ₽</i></span>
+      <small>Полная программа, практики, методички,
+      чат, доступ 12 мес. Для себя и близких.</small>
+     </button>
+     <button class="tariff sel" data-p="25 000 ₽">
+      <span class="badge">выбирают чаще</span>
+      <span class="tt"><b>С сертификатом</b>
+      <i>25 000 ₽</i></span>
+      <small>Аттестация на реальных людях, обратная
+      связь голосом, сертификат для официальной
+      практики, протоколы сессий.</small>
+     </button>
+    </div>
+    <a class="btn sm cbtn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться · 25 000 ₽</a>
+   </div>
+   <div class="card rv" data-course="Род">
+    <h3>Курс «Род»</h3>
+    <p>7 недель · онлайн + практики. Родовые
+    сценарии, непрожитая боль, нерождённые души,
+    сила и опора рода.</p>
+    <div class="tariffs">
+     <button class="tariff" data-p="24 000 ₽">
+      <span class="tt"><b>Базовый</b>
+      <i>24 000 ₽</i></span>
+      <small>Уроки и полный набор практик, родовое
+      древо, методички, чат, доступ 12 мес.</small>
+     </button>
+     <button class="tariff sel" data-p="30 000 ₽">
+      <span class="badge">выбирают чаще</span>
+      <span class="tt"><b>Продвинутый</b>
+      <i>30 000 ₽</i></span>
+      <small>+5 глубоких отработок, доп. ритуалы
+      (поминовение, нерождённые, сила рода), личная
+      обратная связь по каждой практике.</small>
+     </button>
+    </div>
+    <a class="btn sm cbtn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться · 30 000 ₽</a>
+   </div>
+   <div class="card rv" data-course="Экстрасенсорика">
+    <h3>Курс «Экстрасенсорика»</h3>
+    <p>10 недель · онлайн. Чувствительность, энергия
+    рук, считывание поля, диагностика на расстоянии,
+    целительство, защита.</p>
+    <div class="tariffs">
+     <button class="tariff sel" data-p="28 000 ₽">
+      <span class="tt"><b>Полный курс</b>
+      <i>28 000 ₽</i></span>
+      <small>Уроки, практики, обратная связь по
+      домашкам, разбор кейсов, закрытый чат,
+      доступ 12 мес.</small>
+     </button>
+    </div>
+    <a class="btn sm cbtn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться · 28 000 ₽</a>
+   </div>
+   <div class="card rv" data-course="Наставничество">
+    <h3>Наставничество</h3>
+    <p>1 месяц · 4 личные встречи. Персональное
+    сопровождение: разбор случаев, постановка
+    руки, выход на клиентов.</p>
+    <div class="tariffs">
+     <button class="tariff sel" data-p="35 000 ₽">
+      <span class="tt"><b>Индивидуально</b>
+      <i>35 000 ₽</i></span>
+      <small>4 встречи, разбор ваших кейсов, личная
+      программа, связь между встречами, помощь с
+      первыми клиентами.</small>
+     </button>
+    </div>
+    <a class="btn sm cbtn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться · 35 000 ₽</a>
+   </div>
+  </div>
+  <div class="center rv" style="margin-top:44px">
+   <a class="btn" target="_blank"
+    href="https://vk.ru/yana_afanaseva86">
+    Узнать даты потока</a>
+   <button class="btn ghost" data-reviews>
+    Отзывы учениц</button>
+  </div>
+ </div>
+</section>
+
+<section id="tarot">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow rv">Колода 78 арканов</div>
+   <h2 class="sec-title rv">Вытяните
+   <em>свою карту</em></h2>
+   <p class="sec-sub rv">Задайте вопрос, перемешайте
+   колоду и вытяните карту. Нажмите на выпавшую —
+   откроется полное значение.</p>
+   <div class="ornament rv"><i></i>
+    <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1">
+     <rect x="6" y="3" width="12" height="18"
+      rx="2"/>
+     <path d="M12 7l1.6 3.2L17 11l-3.4.8"/>
+     <path d="M12 15l-1.6-3.2L7 11l3.4-.8"/>
+    </svg>
+   <i></i></div>
+  </div>
+  <div class="modes rv">
+   <button class="mode on" data-mode="1">
+    Одна карта</button>
+   <button class="mode" data-mode="3">
+    Расклад на 3 карты</button>
+   <button class="mode" data-mode="5">
+    Расклад на 5 карт</button>
+  </div>
+  <div class="dbar rv">
+   <div class="st">Колода: <b>78</b> ·
+   вытянуто <b id="dc">0</b></div>
+   <div>
+    <button class="btn ghost sm" id="shuf">
+     Перемешать</button>
+    <button class="btn sm" id="rst">
+     Новый расклад</button>
+   </div>
+  </div>
+  <div class="fan rv" id="fan"></div>
+  <div class="reading rv">
+   <h3 id="rtitle">Ваш расклад</h3>
+   <div class="rempty" id="rempty">Карты ещё не
+   вытянуты. Сосредоточьтесь на вопросе и нажмите
+   на любую карту выше.</div>
+   <div class="slots" id="slots"></div>
+   <div id="rdetail"></div>
+   <div class="hint" id="rhint"
+    style="display:none">Нажмите на выпавшую карту,
+    чтобы открыть полное значение аркана.</div>
+   <div id="ract" style="display:none;margin-top:20px">
+    <a class="btn sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Разобрать расклад с Яной</a>
+    <button class="btn ghost sm" id="again">
+     Вытянуть заново</button>
+   </div>
+  </div>
+  <div class="daily rv">
+   <div class="dcard" id="dcard"></div>
+   <div>
+    <h3 style="font-size:26px;color:var(--gold2)">
+     Карта дня</h3>
+    <p id="dtext" style="color:var(--muted);
+     margin:8px 0 16px">Яна выкладывает карту дня
+    на стене. Нажмите кнопку — получите свой аркан
+    на сегодня с советом.</p>
+    <button class="btn" id="dbtn">
+     Вытянуть карту дня</button>
+    <a class="btn ghost" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Карта дня в ВК</a>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="music">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow rv">ATU-YA</div>
+   <h2 class="sec-title rv">Музыка <em>рода и
+   женской силы</em></h2>
+   <p class="sec-sub rv">Нажмите на трек — плеер
+   запустится. Альбомы на всех площадках через
+   band.link.</p>
+   <div class="ornament rv"><i></i>
+    <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1">
+     <path d="M9 18V6l11-2v12"/>
+     <circle cx="6" cy="18" r="3"/>
+     <circle cx="17" cy="16" r="3"/>
+    </svg>
+   <i></i></div>
+  </div>
+  <div class="g2" style="align-items:start">
+   <div class="rv">
+    <div class="album">
+     <div class="art" style="background:
+      radial-gradient(circle at 35% 30%,
+      #a01c33,#3a0814 70%,#150710)">
+      <svg viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="1">
+       <path d="M12 2c3 4 3 8 0 12"/>
+       <path d="M12 2c-3 4-3 8 0 12"/>
+       <path d="M12 14v8"/>
+      </svg>
+     </div>
+     <div>
+      <h4>Дар Предков</h4>
+      <p>Сингл о родовой силе и даре, который
+      передаётся по крови.</p>
+      <a class="btn sm" target="_blank"
+       href="https://band.link/IftJG">
+       Слушать альбом</a>
+      <button class="btn ghost sm" data-play="0">
+       ▶ Включить</button>
+     </div>
+    </div>
+    <div class="album">
+     <div class="art" style="background:
+      radial-gradient(circle at 35% 30%,
+      #7d1428,#2b0611 70%,#12060c)">
+      <svg viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="1">
+       <circle cx="12" cy="8" r="4"/>
+       <path d="M5 21c0-4 3.2-6 7-6s7 2 7 6"/>
+      </svg>
+     </div>
+     <div>
+      <h4>Не сильная</h4>
+      <p>Трек о цене силы и праве женщины не
+      «тащить всё».</p>
+      <a class="btn sm" target="_blank"
+       href="https://band.link/Ydza7">
+       Слушать альбом</a>
+      <button class="btn ghost sm" data-play="1">
+       ▶ Включить</button>
+     </div>
+    </div>
+    <p style="color:var(--muted);font-size:13px;
+     border:1px dashed var(--line);padding:14px">
+    Все треки ATU-YA — на странице Яны ВКонтакте и
+    на площадках через band.link. Если плеер не
+    запустился — откройте трек ВКонтакте.</p>
+   </div>
+   <div class="rv">
+    <div class="tracks">
+     <div class="thead">
+      <b>Треки ATU-YA</b>
+      <a class="btn ghost sm" target="_blank"
+       href="https://vk.ru/yana_afanaseva86">
+       Все аудио в ВК</a>
+     </div>
+     <div class="track" data-i="0">
+      <div class="pl">
+       <svg viewBox="0 0 24 24" fill="currentColor"
+        class="ico"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div><b>ATU-YA — Дар Предков</b>
+      <span>сингл · альбом «Дар Предков»</span></div>
+      <div class="eq"><i></i><i></i><i></i></div>
+     </div>
+     <div class="track" data-i="1">
+      <div class="pl">
+       <svg viewBox="0 0 24 24" fill="currentColor"
+        class="ico"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div><b>ATU-YA — Не сильная</b>
+      <span>сингл · альбом «Не сильная»</span></div>
+      <div class="eq"><i></i><i></i><i></i></div>
+     </div>
+     <div class="track" data-i="2">
+      <div class="pl">
+       <svg viewBox="0 0 24 24" fill="currentColor"
+        class="ico"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div><b>ATU-YA — Ты — Огонь</b>
+      <span>трек о женской силе и роде</span></div>
+      <div class="eq"><i></i><i></i><i></i></div>
+     </div>
+     <div class="track" data-i="3">
+      <div class="pl">
+       <svg viewBox="0 0 24 24" fill="currentColor"
+        class="ico"><path d="M8 5v14l11-7z"/></svg>
+      </div>
+      <div><b>ATU-YA — Невидимая Нить</b>
+      <span>о нерождённых душах рода</span></div>
+      <div class="eq"><i></i><i></i><i></i></div>
+     </div>
+    </div>
+    <div class="ppanel" id="ppanel">
+     <div id="pframe"></div>
+     <div class="pbar">
+      <small id="now">—</small>
+      <a class="btn ghost sm" id="pvk"
+       target="_blank"
+       href="https://vk.ru/yana_afanaseva86">
+       Открыть ВКонтакте</a>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="posts">
+ <div class="wrap">
+  <div class="center">
+   <div class="eyebrow rv">Стена ВКонтакте</div>
+   <h2 class="sec-title rv">Посты <em>Яны</em> —
+   читать полностью</h2>
+   <p class="sec-sub rv">Тексты со страницы
+   vk.ru/yana_afanaseva86.</p>
+   <div class="ornament rv"><i></i>
+    <svg viewBox="0 0 24 24" fill="none"
+     stroke="currentColor" stroke-width="1">
+     <path d="M4 5h16v14H4z"/>
+     <path d="M8 9h8M8 13h8M8 17h5"/>
+    </svg>
+   <i></i></div>
+  </div>
+  <div id="plist">
+
+  <article class="post rv">
+   <div class="phead"><h3>Новый трек!</h3>
+   <div class="pdate">11 часов назад</div></div>
+   <div class="paudio">♪ ATU-YA — Не сильная</div>
+   <div class="pbody">
+    <p>Новый трек уже вышел — «Не сильная».</p>
+    <p>Это песня о цене силы, о том, как женщина
+    годами «тащит всё», боится попросить о помощи и
+    перестаёт чувствовать себя живой. О страхе быть
+    слабой — и о том, что настоящая сила в том,
+    чтобы позволить себе быть собой.</p>
+    <p>Слушайте, сохраняйте и делитесь с теми, кому
+    сейчас тяжело.</p>
+   </div>
+   <div class="ptags">
+    <span>#несильная</span><span>#ATU-YA</span>
+    <span>#женщина</span><span>#род</span>
+   </div>
+   <div class="pfoot">
+    <button class="btn ghost sm" data-play="1">
+     ▶ Слушать трек</button>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Пост ВКонтакте</a>
+   </div>
+  </article>
+
+  <article class="post rv">
+   <div class="phead">
+    <h3>Главная ошибка «новичков»</h3>
+    <div class="pdate">19 часов назад</div></div>
+   <div class="paudio">♪ ATU-YA — Дар Предков</div>
+   <div class="pbody">
+    <p>Главная ошибка «новичков» — пытаться сразу
+    «видеть» и требовать от себя результатов, не
+    выстроив базу: защиту, чистоту энергетики,
+    контакт с родом и собственным телом.</p>
+    <p>Дар — это не фокус и не развлечение. Это
+    работа, дисциплина и ответственность. Сначала —
+    чистка, наполнение чакр, связь с родовой силой.
+    И только потом — практика.</p>
+   </div>
+   <div class="ptags">
+    <span>#дар</span><span>#род</span>
+    <span>#ясновидение</span><span>#чакры</span>
+   </div>
+   <div class="pfoot">
+    <button class="btn ghost sm" data-play="0">
+     ▶ Слушать трек</button>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Пост ВКонтакте</a>
+   </div>
+  </article>
+
+  <article class="post rv">
+   <div class="phead"><h3>Девочки, милые!</h3>
+   <div class="pdate">24 августа</div></div>
+   <div class="paudio">♪ ATU-YA — Ты — Огонь</div>
+   <div class="pbody">
+    <p>Вы — не просто роли! Мама, сестра, дочь,
+    жена, коллега, подруга…</p>
+    <p>Вы — души, которые пришли для своего роста,
+    эволюции, опыта, реализации своих задач и
+    программ!</p>
+    <p>Роли важны! Но в погоне за «быть хорошей и
+    удобной девочкой» вы часто себя предаёте. Потом
+    образуются болезни.</p>
+    <p>Эти паттерны передаются из поколения в
+    поколение! Родовые повторяющиеся женские болезни
+    часто показывают на сходство именно в
+    деструктивном поведении и отношении к себе!</p>
+    <p>Берегите себя!</p>
+   </div>
+   <div class="ptags">
+    <span>#женщина</span><span>#род</span>
+    <span>#роли</span><span>#сценарии</span>
+   </div>
+   <div class="pfoot">
+    <button class="btn ghost sm" data-play="2">
+     ▶ Слушать трек</button>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Пост ВКонтакте</a>
+   </div>
+  </article>
+
+  <article class="post rv">
+   <div class="phead"><h3>Невидимая нить</h3>
+   <div class="pdate">22 августа</div></div>
+   <div class="paudio">♪ ATU-YA — Невидимая Нить</div>
+   <div class="pbody col">
+    <p>В каждом женском роду есть своя невидимая
+    комната. Комната, куда наглухо заперты
+    непролитые слёзы и слова, которые так и не были
+    произнесены вслух. Это боль от нерождённых
+    детей.</p>
+    <p>О ней не принято говорить за праздничным
+    столом. О ней не пишут в семейных альбомах. Нам,
+    девочкам, девушкам, женщинам, поколениями
+    внушали: «Так было надо». «Время было тяжёлое».
+    «Мы бы не выжили». И мы молчали.</p>
+    <p>Но боль нельзя запереть на ключ. Физически
+    ребёнка может не стать, но в женском теле и в
+    женской душе остаётся фантомная пустота. Она
+    оседает холодом в животе, тяжестью в груди,
+    внезапной тоской, которая накатывает без
+    причины.</p>
+    <p>Оглянись на свой род. Вспомни бабушку, которая
+    вдруг замолкала, смотря в окно. Вспомни маму, чей
+    голос срывался, или тётю, которая так и не смогла
+    родить. Эта боль — как тёмная, рвущаяся нить,
+    сплетающая поколения женщин.</p>
+    <p>Но самое главное, о чём мы боимся подумать:
+    «они никуда не ушли». Души нерождённых детей не
+    растворяются в небытии. Они остаются в Роду. Они
+    — невидимая, но неотъемлемая часть нашего
+    семейного древа.</p>
+    <p>Представь корни твоего рода. Там, в глубине,
+    среди переплетений судеб, войн и выживаний,
+    стоят они. Маленькие, тихие, светлые тени. Они
+    держатся за руки. Они не обвиняют. Они просто
+    ждут, когда их увидят и назовут.</p>
+    <p>Милые женщины. Те, кто несёт этот груз.
+    Остановитесь. Выдохните. Эта боль — не клеймо и
+    не наказание. Это доказательство того, что у вас
+    огромное, любящее сердце.</p>
+    <p>Скажи им мысленно: «Простите меня. Я вас вижу.
+    Я вас чувствую. Вы — часть моего рода. У вас есть
+    место в моём сердце. Я люблю вас. И я отпускаю
+    свою вину». И наблюдайте за ощущениями в
+    теле…</p>
+    <p>Когда мы перестаём прятать эту боль, происходит
+    чудо. Нерождённые ангелы нашего рода становятся
+    тихими хранителями. А мы, живые женщины, наконец
+    обретаем право дышать полной грудью.</p>
+   </div>
+   <div class="ptags">
+    <span>#Род</span><span>#Родоваяистория</span>
+    <span>#боль</span><span>#ангелы</span>
+   </div>
+   <div class="pfoot">
+    <button class="rm">Читать полностью</button>
+    <button class="btn ghost sm" data-play="3">
+     ▶ Слушать трек</button>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Пост ВКонтакте</a>
+   </div>
+  </article>
+
+  <article class="post rv">
+   <div class="phead">
+    <h3>Таро · Русские сказки · расклад на
+    отношения</h3>
+    <div class="pdate">30 августа</div></div>
+   <div class="pbody">
+    <p>Авторский расклад «Русские сказки» показывает
+    отношения как сюжет: кто вы в этой сказке, какую
+    роль играете, какой урок проходите и чем всё
+    закончится, если ничего не менять.</p>
+    <p>Расклад отвечает на вопросы: что чувствует
+    партнёр, каковы его намерения, что мешает союзу
+    и куда движутся отношения.</p>
+   </div>
+   <div class="ptags">
+    <span>#таро</span><span>#русскиесказки</span>
+    <span>#отношения</span>
+   </div>
+   <div class="pfoot">
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Пост ВКонтакте</a>
+   </div>
+  </article>
+
+  <article class="post rv">
+   <div class="phead"><h3>Карта дня</h3>
+   <div class="pdate">30 августа</div></div>
+   <div class="pbody">
+    <p>Рубрика «Карта дня»: каждый день Яна вытягивает
+    аркан, который задаёт энергию суток.</p>
+    <p>Хотите свою карту на сегодня? Нажмите
+    «Вытянуть карту» в разделе Таро — или читайте
+    карту дня в постах ВКонтакте.</p>
+   </div>
+   <div class="ptags">
+    <span>#картадня</span>
+   </div>
+   <div class="pfoot">
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Пост ВКонтакте</a>
+   </div>
+  </article>
+
+  <article class="post rv">
+   <div class="phead">
+    <h3>Оба наших сингла уже вышли!</h3>
+    <div class="pdate">август</div></div>
+   <div class="pbody">
+    <p>Оба наших сингла уже вышли, сегодня!</p>
+    <p>Приятного прослушивания! Можно сохранять и
+    скачивать.</p>
+    <p>«Дар Предков» — о родовой силе и даре, который
+    идёт по крови. «Не сильная» — о цене силы и праве
+    быть живой.</p>
+   </div>
+   <div class="ptags">
+    <span>#ATU-YA</span><span>#дарпредков</span>
+    <span>#несильная</span>
+   </div>
+   <div class="pfoot">
+    <button class="btn ghost sm" data-play="0">
+     ▶ Слушать</button>
+    <a class="btn wine sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Пост ВКонтакте</a>
+   </div>
+  </article>
+
+  </div>
+  <div class="center rv">
+   <a class="btn" target="_blank"
+    href="https://vk.ru/yana_afanaseva86">
+    Открыть стену ВКонтакте</a>
+  </div>
+ </div>
+</section>
+
+<section id="contact">
+ <div class="wrap">
+  <div class="contact rv">
+   <div class="cgrid">
+    <div>
+     <div class="eyebrow">Запись</div>
+     <h2 style="font-size:clamp(28px,3.6vw,42px)">
+      Напишите мне
+      <em style="color:var(--gold2)">лично</em></h2>
+     <p style="color:var(--muted)">Расскажите в двух
+     словах о запросе — я отвечу, подберу практику и
+     назначу время.</p>
+     <ul class="clist">
+      <li><svg viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="1.4">
+       <circle cx="12" cy="12" r="9"/>
+       <path d="M3 12h18"/></svg>
+       Онлайн-консультации по всему миру</li>
+      <li><svg viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="1.4">
+       <circle cx="12" cy="12" r="9"/>
+       <path d="M12 7v5l3.5 2"/></svg>
+       Ответ в течение дня · запись заранее</li>
+      <li><svg viewBox="0 0 24 24" fill="none"
+       stroke="currentColor" stroke-width="1.4">
+       <path d="M12 3l2.6 5.6 6.1.8-4.5 4.2"/>
+       <path d="M15.7 13.6L12 16.8 6.6 19.7"/>
+       <path d="M7.8 13.6L3.3 9.4l6.1-.8z"/></svg>
+       Практика с 2016 года · 45+ учениц</li>
+     </ul>
+     <a class="btn" target="_blank"
+      href="https://vk.ru/yana_afanaseva86">
+      Написать в ВКонтакте</a>
+     <button class="btn ghost" data-reviews>
+      Отзывы клиентов</button>
+    </div>
+    <form class="form" id="cform">
+     <div><label>Ваше имя</label>
+      <input type="text" id="fn"
+       placeholder="Как к вам обращаться"
+       required></div>
+     <div class="frow">
+      <div><label>Что интересует</label>
+       <select id="ft">
+        <option>Ясновидение — 10 000 ₽</option>
+        <option>Отливка воском — 4 500 ₽</option>
+        <option>Таро одна сфера — 3 000 ₽</option>
+        <option>Таро полный — 5 500 ₽</option>
+        <option>Чакроанализ — 5 000 ₽</option>
+        <option>Матрица судьбы — 6 500 ₽</option>
+        <option>Детская матрица — 3 000 ₽</option>
+        <option>Совместимость — 4 000 ₽</option>
+        <option>Свечи — от 1 200 ₽</option>
+        <option>Натальная карта — 8 000 ₽</option>
+        <option>Совместимость карт — 13 000 ₽</option>
+        <option>Дизайн человека — 9 500 ₽</option>
+        <option>Детский дизайн — 5 000 ₽</option>
+        <option>Курс Ясновидение баз — 15 000 ₽</option>
+        <option>Курс Ясновидение прод — 25 000 ₽</option>
+        <option>Курс Матрица баз — 12 000 ₽</option>
+        <option>Курс Матрица прод — 18 000 ₽</option>
+        <option>Курс Чакры без серт — 15 000 ₽</option>
+        <option>Курс Чакры с серт — 25 000 ₽</option>
+        <option>Курс Род баз — 24 000 ₽</option>
+        <option>Курс Род прод — 30 000 ₽</option>
+        <option>Курс Экстрасенсорика — 28 000 ₽</option>
+        <option>Наставничество — 35 000 ₽</option>
+       </select></div>
+      <div><label>Дата рождения</label>
+       <input type="text" id="fd"
+        placeholder="01.01.1990"></div>
+     </div>
+     <div><label>Ваш вопрос</label>
+      <textarea id="fm"
+       placeholder="Опишите ситуацию"></textarea>
+     </div>
+     <button class="btn" type="submit">
+      Отправить запрос в ВК</button>
+     <small style="color:var(--muted);font-size:12px">
+     Форма откроет страницу Яны ВКонтакте — вставьте
+     текст в сообщение.</small>
+    </form>
+   </div>
+  </div>
+ </div>
+</section>
+
+<footer>
+ <div class="wrap">
+  <div class="fgrid">
+   <div>
+    <a class="logo" href="#home" data-home
+     style="margin-bottom:14px">
+     <span class="logo-mark">
+      <svg viewBox="0 0 24 24" fill="none"
+       stroke="#f2dcae" stroke-width="1.2">
+       <circle cx="12" cy="12" r="8.2"/>
+       <path d="M12 3.8v16.4M3.8 12h16.4"/>
+      </svg>
+     </span>
+     <span><b>ATU-YA</b>
+     <span>Яна Афанасьева</span></span>
+    </a>
+    <p style="color:var(--muted);font-size:13px;
+     max-width:300px">Ясновидение, Таро,
+    чакроанализ, матрица судьбы и работа с Родом.
+    Практика с 2016 года. Музыка ATU-YA.</p>
+   </div>
+   <div><h4>Услуги</h4><ul>
+    <li><a href="#services">Отливка — 4 500 ₽</a></li>
+    <li><a href="#services">Таро — от 3 000 ₽</a></li>
+    <li><a href="#services">Чакры — 5 000 ₽</a></li>
+    <li><a href="#services">Матрица — 6 500 ₽</a></li>
+    <li><a href="#services">Ясновидение — 10 000 ₽</a></li>
+   </ul></div>
+   <div><h4>Ещё</h4><ul>
+    <li><a href="#services">Натальная — 8 000 ₽</a></li>
+    <li><a href="#services">Дизайн — 9 500 ₽</a></li>
+    <li><a href="#tarot">Вытянуть карту</a></li>
+    <li><a href="#music">Музыка ATU-YA</a></li>
+    <li><button data-reviews>Отзывы</button></li>
+   </ul></div>
+   <div><h4>Курсы</h4><ul>
+    <li><a href="#courses">Ясновидение — от 15 000 ₽</a></li>
+    <li><a href="#courses">Матрица — от 12 000 ₽</a></li>
+    <li><a href="#courses">Чакры — от 15 000 ₽</a></li>
+    <li><a href="#courses">Род — от 24 000 ₽</a></li>
+    <li><a href="#courses">Экстра — 28 000 ₽</a></li>
+    <li><a href="#courses">Наставничество — 35 000 ₽</a></li>
+   </ul></div>
+  </div>
+  <div class="fbot">
+   <span>© 2026 Яна Афанасьева · ATU-YA</span>
+   <span><a target="_blank"
+    href="https://vk.ru/yana_afanaseva86">
+    vk.ru/yana_afanaseva86</a></span>
+  </div>
+ </div>
+</footer>
+
+</div>
+
+<div class="page" id="rpage">
+ <section style="padding-top:140px">
+  <div class="wrap">
+   <div style="display:flex;
+    justify-content:space-between;
+    gap:14px;flex-wrap:wrap;margin-bottom:10px">
+    <button class="btn ghost sm" id="back">
+     ← Вернуться на сайт</button>
+    <a class="btn sm" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Оставить отзыв в ВК</a>
+   </div>
+   <div class="center">
+    <div class="eyebrow">Отзывы</div>
+    <h2 class="sec-title">Что говорят
+    <em>клиенты и ученицы</em></h2>
+    <p class="sec-sub">Реальные истории тех, кто
+    прошёл консультации, чистки и курсы.</p>
+   </div>
+   <div class="rstats">
+    <div class="rstat"><b>4,9</b>
+     <span>средняя оценка</span></div>
+    <div class="rstat"><b>2016</b>
+     <span>год начала практики</span></div>
+    <div class="rstat"><b>1 200+</b>
+     <span>консультаций</span></div>
+    <div class="rstat"><b>45+</b>
+     <span>учениц на курсах</span></div>
+   </div>
+   <div class="rfil" id="rfil"></div>
+   <div class="rmas" id="rmas">
+
+    <article class="review s4 feat"
+     data-svc="Отливка воском">
+     <div class="rvh"><div class="ava">М</div>
+      <div><b>Марина К.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Пришла к Яне после того, как полгода не могла
+     спать: просыпалась в три ночи с тяжестью в
+     груди и чувством, что в доме кто-то есть. Врачи
+     разводили руками. Яна делала отливку воском, и
+     когда показала, что получилось на второй
+     выливке, у меня волосы встали: фигура, похожая
+     на женщину, и имя, которое знала только моя
+     бабушка. После третьей чистки я впервые за
+     полгода проспала до утра. Плакала, если честно.
+     Спасибо огромное.</p>
+     <div class="rvf">
+      <span class="rvs">Отливка воском</span>
+      <span class="rvd">18 января 2026</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Чакроанализ">
+     <div class="rvh"><div class="ava">О</div>
+      <div><b>Ольга В.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Делала чакроанализ впервые, шла со скепсисом.
+     Яна по каждой чакре рассказала так, будто знает
+     меня лет десять: где блокируются деньги, почему
+     не складываются отношения, что с горлом (я
+     годами не могу сказать «нет» маме). Отдельно про
+     родовую программу по женской линии — мурашки.
+     Дала практики, занимаюсь третью неделю, стало
+     легче дышать буквально.</p>
+     <div class="rvf">
+      <span class="rvs">Чакроанализ</span>
+      <span class="rvd">4 февраля 2026</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Отливка воском">
+     <div class="rvh"><div class="ava">К</div>
+      <div><b>Ксения А.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Делала чистку воском себе и маме. У мамы вышло
+     что-то похожее на плотный комок с «иголками» —
+     Яна сказала, это застарелая обида и зависть
+     близкой женщины. Мама вспомнила конфликт с
+     сестрой пятилетней давности. Сейчас легче,
+     давление скачет меньше.</p>
+     <div class="rvf">
+      <span class="rvs">Отливка воском</span>
+      <span class="rvd">1 февраля 2026</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Матрица судьбы">
+     <div class="rvh"><div class="ava">Е</div>
+      <div><b>Екатерина Л.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Матрицу заказывала у разных специалистов, но
+     тут впервые услышала не зачитывание по методичке,
+     а живой разбор. Яна связала мой кармический хвост
+     с тем, что реально происходит: с работой, с
+     деньгами, с тем, что я постоянно «спасаю» других
+     в ущерб себе. Разговор шёл два с половиной часа,
+     записала на диктофон и переслушиваю.</p>
+     <div class="rvf">
+      <span class="rvs">Матрица судьбы</span>
+      <span class="rvd">27 декабря 2025</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Матрица судьбы">
+     <div class="rvh"><div class="ava">П</div>
+      <div><b>Полина Ж.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Заказала детскую матрицу для дочки 13 лет и
+     свою. Лучшее вложение за год: поняла, почему у
+     ребёнка конфликты в школе и к чему её вообще не
+     надо давить. Объяснили простым языком, без
+     терминологической каши.</p>
+     <div class="rvf">
+      <span class="rvs">Матрица судьбы</span>
+      <span class="rvd">8 февраля 2026</span></div>
+    </article>
+
+    <article class="review s4 feat"
+     data-svc="Курс «Род»">
+     <div class="rvh"><div class="ava">С</div>
+      <div><b>Светлана Р.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Курс «Род» — самое сильное, что со мной
+     случалось за последние годы. Я шла с запросом про
+     повторяющиеся женские болезни в семье: по маминой
+     линии три операции у женщин до сорока лет. К
+     пятой неделе дошло, что мы все жили в сценарии
+     «терпи и молчи». Практика поминовения нерождённых
+     тяжёлая, рыдала, но после неё как будто камень
+     сняли. Отдельная благодарность за дополнительные
+     ритуалы на продвинутом тарифе — они и дали
+     основную глубину. Яна на связи, отвечает на все
+     вопросы, никого не бросает.</p>
+     <div class="rvf">
+      <span class="rvs">Курс «Род»</span>
+      <span class="rvd">12 января 2026</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Расклад Таро">
+     <div class="rvh"><div class="ava">И</div>
+      <div><b>Ирина Д.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Просила расклад на отношения: мужчина вроде
+     есть, а понимания нет. Яна разложила «Русские
+     сказки» и сказала вещи, которые я сама себе
+     боялась признать. Про его намерения всё
+     подтвердилось через месяц, дословно.</p>
+     <div class="rvf">
+      <span class="rvs">Расклад Таро</span>
+      <span class="rvd">2 февраля 2026</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Консультация ясновидения">
+     <div class="rvh"><div class="ava">Н</div>
+      <div><b>Наталья П.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Обращалась по поводу ребёнка: сын восьми лет
+     стал агрессивным, плохо спал, боялся темноты. Яна
+     посмотрела без присутствия, по фото. Сказала, что
+     есть испуг и чужое воздействие после поездки к
+     родственникам, предложила чистку. Сделали свечу и
+     отливку. Через две недели ребёнка как подменили —
+     спит спокойно, перестал просыпаться с криком. Я
+     не знаю, как это работает, но это работает.</p>
+     <div class="rvf">
+      <span class="rvs">Ясновидение</span>
+      <span class="rvd">9 января 2026</span></div>
+    </article>
+
+    <article class="review s3 feat"
+     data-svc="Консультация ясновидения">
+     <div class="rvh"><div class="ava">Л</div>
+      <div><b>Людмила Г.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Мне 58 лет, я много чего повидала и в такое не
+     очень верила. Дочь уговорила обратиться к Яне
+     после смерти мужа — год как в тумане, не могла
+     выйти из этого состояния. Яна не «лечила» меня
+     чудесами, просто очень точно сказала, что я держу
+     его и не отпускаю, и что он этого не хочет. Мы
+     сделали практику, и меня отпустило. Впервые за
+     год захотелось жить.</p>
+     <div class="rvf">
+      <span class="rvs">Ясновидение</span>
+      <span class="rvd">19 ноября 2025</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Программные свечи">
+     <div class="rvh"><div class="ava">А</div>
+      <div><b>Алина Ш.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Заказывала свечу на чистку и защиту после
+     тяжёлого расставания. Яна всё подробно объяснила:
+     как зажигать, что говорить, сколько дней
+     прожигать. На третий день отпустило так, что сама
+     удивилась — до этого два месяца выла по ночам.</p>
+     <div class="rvf">
+      <span class="rvs">Программные свечи</span>
+      <span class="rvd">21 декабря 2025</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Натальная карта">
+     <div class="rvh"><div class="ava">В</div>
+      <div><b>Виктория С.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Заказывала натальную карту и совместимость с
+     мужем. Очень понравилось, что Яна не пугает
+     «плохими» аспектами, а объясняет, как с ними
+     жить. Про кризисные периоды сказала сроки — один
+     мы как раз проходим, и теперь понятно, что это не
+     навсегда. Отдельное спасибо за разбор карты сына:
+     многое в его поведении встало на места.</p>
+     <div class="rvf">
+      <span class="rvs">Натальная карта</span>
+      <span class="rvd">6 февраля 2026</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Дизайн человека">
+     <div class="rvh"><div class="ava">Ю</div>
+      <div><b>Юлия Т.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Никогда не понимала, почему постоянно выгораю,
+     хотя работаю вроде меньше других. Яна разобрала
+     мой бодиграф и объяснила про открытые центры — как
+     я подхватываю чужие состояния и не отличаю их от
+     своих. Это перевернуло мой подход к работе и
+     отдыху.</p>
+     <div class="rvf">
+      <span class="rvs">Дизайн человека</span>
+      <span class="rvd">15 февраля 2026</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Курс «Ясновидение»">
+     <div class="rvh"><div class="ava">Д</div>
+      <div><b>Дарья М.</b>
+      <span class="stars">★★★★☆</span></div></div>
+     <p>Курс хороший, много практики, но предупреждаю:
+     лёгким не покажется. Первые две недели было
+     ощущение, что «открывается» всё сразу — голова
+     тяжёлая, эмоции качели. Яна говорила, что так и
+     должно быть, и давала техники заземления. К концу
+     курса стала ловить образы и точно описывать
+     ситуацию людям. Четыре звезды только потому, что
+     мне лично хотелось бы больше обратной связи по
+     домашкам — берите продвинутый тариф, там она
+     есть.</p>
+     <div class="rvf">
+      <span class="rvs">Курс «Ясновидение»</span>
+      <span class="rvd">30 ноября 2025</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Курс «Чакроанализ»">
+     <div class="rvh"><div class="ava">Т</div>
+      <div><b>Татьяна Н.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Пришла на курс уже после консультации у Яны —
+     захотелось научиться диагностировать самой.
+     Программа плотная, всё по делу: диагностика,
+     чтение блоков, чистки, защита. Брала тариф с
+     сертификатом, потому что планировала работать с
+     людьми. Отдельный плюс — разбор наших кейсов в
+     закрытом чате, Яна отвечает даже поздно вечером.
+     Уже делаю разборы знакомым, и люди в шоке от
+     точности.</p>
+     <div class="rvf">
+      <span class="rvs">Курс «Чакроанализ»</span>
+      <span class="rvd">11 января 2026</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Курс «Экстрасенсорика»">
+     <div class="rvh"><div class="ava">А</div>
+      <div><b>Анна Е.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Курс для тех, кто уже что-то умеет и хочет
+     систематизировать. У меня были «случайные»
+     попадания, но я боялась этого и не понимала, как
+     управлять. Здесь поставили технику, научили
+     чувствовать поле руками, работать на расстоянии
+     и — главное — восстанавливаться после сессий.
+     Раньше после людей сутками лежала, теперь нет.</p>
+     <div class="rvf">
+      <span class="rvs">Курс «Экстрасенсорика»</span>
+      <span class="rvd">24 января 2026</span></div>
+    </article>
+
+    <article class="review s3 feat"
+     data-svc="Курс «Матрица судьбы»">
+     <div class="rvh"><div class="ava">И</div>
+      <div><b>Ирина Т.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Сомневалась между базовым и продвинутым тарифом
+     и чуть не взяла базовый, чтобы сэкономить. Хорошо,
+     что Яна отговорила. На продвинутом она лично
+     проверяла каждый мой расчёт и показывала, где я
+     придумала, а не увидела. К четвёртой неделе я уже
+     разбирала матрицу подруге, а к концу курса взяла
+     первых платных клиентов. Разница в 6000 ₽
+     окупилась за одну консультацию. Если идёте за
+     профессией — только продвинутый.</p>
+     <div class="rvf">
+      <span class="rvs">Курс «Матрица судьбы»</span>
+      <span class="rvd">17 января 2026</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Чакроанализ">
+     <div class="rvh"><div class="ava">О</div>
+      <div><b>Оксана Б.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Была у трёх специалистов, но только Яна
+     объяснила, что делать с блоками, а не просто
+     назвала их. Спасибо!</p>
+     <div class="rvf">
+      <span class="rvs">Чакроанализ</span>
+      <span class="rvd">29 декабря 2025</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Расклад Таро">
+     <div class="rvh"><div class="ava">В</div>
+      <div><b>Вероника Л.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Всё по делу, без воды и запугиваний. Сказала
+     как есть — и стало легче.</p>
+     <div class="rvf">
+      <span class="rvs">Расклад Таро</span>
+      <span class="rvd">23 января 2026</span></div>
+    </article>
+
+    <article class="review"
+     data-svc="Программные свечи">
+     <div class="rvh"><div class="ava">Г</div>
+      <div><b>Галина М.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Свеча на защиту работает. Дома стало тихо, дети
+     перестали ссориться.</p>
+     <div class="rvf">
+      <span class="rvs">Программные свечи</span>
+      <span class="rvd">5 января 2026</span></div>
+    </article>
+
+    <article class="review s3"
+     data-svc="Курс «Ясновидение»">
+     <div class="rvh"><div class="ava">Д</div>
+      <div><b>Диана Р.</b>
+      <span class="stars">★★★★★</span></div></div>
+     <p>Брала продвинутый тариф с обратной связью и не
+     пожалела ни разу. Яна смотрела каждую мою практику
+     голосом, поправляла, объясняла, где я «додумываю».
+     Четыре созвона разложили всё по полочкам. Сейчас
+     веду первых клиентов и чувствую опору, которой не
+     было на других курсах.</p>
+     <div class="rvf">
+      <span class="rvs">Курс «Ясновидение»</span>
+      <span class="rvd">14 февраля 2026</span></div>
+    </article>
+
+   </div>
+   <div class="center" style="margin-top:40px">
+    <a class="btn" target="_blank"
+     href="https://vk.ru/yana_afanaseva86">
+     Записаться к Яне</a>
+    <button class="btn ghost" id="back2">
+     На главную</button>
+   </div>
+  </div>
+ </section>
+ <footer>
+  <div class="wrap fbot"
+   style="margin-top:0;border-top:0">
+   <span>© 2026 Яна Афанасьева · ATU-YA</span>
+   <span><a target="_blank"
+    href="https://vk.ru/yana_afanaseva86">
+    vk.ru/yana_afanaseva86</a></span>
+  </div>
+ </footer>
+</div>
+
+<a class="fvk" target="_blank"
+ href="https://vk.ru/yana_afanaseva86"
+ aria-label="Написать ВК">
+ <svg viewBox="0 0 24 24" fill="currentColor">
+  <path d="M12.8 17.1c-5.6 0-8.8-3.8-8.9-10.2h2.8c.1 4.7 2.2 6.7 3.8 7.1V6.9h2.7v4.1c1.6-.2 3.2-2 3.8-4.1h2.7c-.5 2.5-2.2 4.3-3.5 5 1.3.6 3.3 2.2 4 5.2h-3c-.6-1.9-2.1-3.3-4-3.5v3.5h-.4z"/>
+ </svg>
+</a>
+
+<div class="modal" id="modal">
+ <div class="mbg" data-close></div>
+ <div class="mbox">
+  <button class="mclose" data-close>✕</button>
+  <div class="mgrid" id="mbody"></div>
+ </div>
+</div>
+
+<div class="toast" id="toast"></div>
+<script>
+var VK='https://vk.ru/yana_afanaseva86';
+var VA='https://vk.ru/audio-2001677306_153677306';
+var BD='https://band.link/IftJG';
+var BN='https://band.link/Ydza7';
+function esc(s){
+ return String(s).replace(/&/g,'&amp;')
+ .replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+function mul32(a){
+ return function(){
+  a|=0;a=a+0x6D2B79F5|0;
+  var t=Math.imul(a^a>>>15,1|a);
+  t=t+Math.imul(t^t>>>7,61|t)^t;
+  return((t^t>>>14)>>>0)/4294967296;
+ };
+}
+function sigil(seed){
+ var r=mul32(seed*9301+49297);
+ var n=3+Math.floor(r()*5);
+ var rings=2+Math.floor(r()*2);
+ var rays=6+Math.floor(r()*10);
+ var s='<svg viewBox="0 0 100 100" style="fill:none;stroke:#d9b26a;stroke-width:1.1">';
+ var i,a;
+ for(i=0;i<rings;i++){
+  s+='<circle cx="50" cy="50" r="'+(15+i*11)+'"/>';
+ }
+ var pts=[];
+ for(i=0;i<n;i++){
+  a=Math.PI*2*i/n-Math.PI/2;
+  pts.push((50+Math.cos(a)*31).toFixed(1)+','+
+   (50+Math.sin(a)*31).toFixed(1));
+ }
+ s+='<polygon points="'+pts.join(' ')+'"/>';
+ for(i=0;i<rays;i++){
+  a=Math.PI*2*i/rays+r()*0.4;
+  s+='<line x1="'+(50+Math.cos(a)*38).toFixed(1)+
+   '" y1="'+(50+Math.sin(a)*38).toFixed(1)+
+   '" x2="'+(50+Math.cos(a)*45).toFixed(1)+
+   '" y2="'+(50+Math.sin(a)*45).toFixed(1)+'"/>';
+ }
+ return s+'<circle cx="50" cy="50" r="3"/></svg>';
+}
+var SICON={
+ w:'<svg viewBox="0 0 24 24" fill="none" stroke="#f2dcae" stroke-width="1.2"><path d="M12 21V4"/><path d="M12 8c2.5-1 4-3 4-5-2.5 0-4 2-4 5z"/><path d="M12 12c-2.5-1-4-3-4-5 2.5 0 4 2 4 5z"/><path d="M9 21h6"/></svg>',
+ c:'<svg viewBox="0 0 24 24" fill="none" stroke="#f2dcae" stroke-width="1.2"><path d="M6 4h12l-1.5 6a4.5 4.5 0 01-9 0z"/><path d="M12 14v5"/><path d="M8 21h8"/></svg>',
+ s:'<svg viewBox="0 0 24 24" fill="none" stroke="#f2dcae" stroke-width="1.2"><path d="M12 2l2.5 12h-5z"/><path d="M12 14v6"/><path d="M8 20h8"/><path d="M7 8h10"/></svg>',
+ p:'<svg viewBox="0 0 24 24" fill="none" stroke="#f2dcae" stroke-width="1.2"><circle cx="12" cy="12" r="9"/><path d="M12 4.5l2.4 5 5.5.7-4 3.8 1 5.4-4.9-2.7-4.9 2.7 1-5.4-4-3.8 5.5-.7z"/></svg>'
+};
+var MAJOR=[
+["0","Шут","свобода · начало · доверие",
+"Шаг в неизвестность с лёгким сердцем: энергия чистого начала, внутренний ребёнок, доверие миру. Дорога появится под ногами, даже если плана пока нет.",
+"Безрассудство или страх первого шага: наивность может дорого стоить, а незакрытые старые дела вернутся в неудобный момент.",
+"Разрешите себе начать с нуля, но возьмите хотя бы план-минимум.",
+"Лёгкие свежие отношения без обязательств или начало романа. Перевёрнутый — несерьёзность партнёра, игра в кошки-мышки.",
+"Новый проект, смена деятельности, творческий эксперимент. Деньги приходят легко и легко уходят — не тратьте всё сразу."],
+["1","Маг","воля · мастерство · проявление",
+"Все инструменты уже в руках: знания, связи, энергия, слова. Момент, когда намерение становится действием. Берите инициативу — вы влияете сильнее, чем думаете.",
+"Сила уходит в пустые разговоры, манипуляции и самообман. Либо потенциал не используется, либо работает против других.",
+"Скажите чётко, чего хотите, и сделайте один конкретный шаг сегодня.",
+"Сильное притяжение, инициатива в ваших руках. Перевёрнутый — манипуляции и обаяние ради выгоды.",
+"Отличный момент для переговоров, запуска дела, монетизации таланта. Перевёрнутый — риск обмана и пустых обещаний."],
+["2","Верховная Жрица","интуиция · тайна · род",
+"Ответ уже есть внутри, но пока не озвучен. Скрытые процессы зреют в тишине: сильная интуиция, вещие сны, родовая память. Тело и первые ощущения точнее логики.",
+"Интуиция перекрыта шумом: чужие советы, страх, бесконечный анализ. Либо от вас что-то скрывают, либо вы прячете правду от себя.",
+"Побудьте в тишине хотя бы день перед важным решением.",
+"Скрытые чувства, тайная связь, глубокое взаимопонимание без слов. Перевёрнутый — недосказанность и подозрения.",
+"Не время для активных действий: собирайте информацию и наблюдайте. Перевёрнутый — интриги за спиной."],
+["3","Императрица","плодородие · женственность · изобилие",
+"Время расцвета: тело, чувства, творчество и деньги идут в рост. Материнская энергия, забота, красота, достаток. Всё посеянное начинает плодоносить.",
+"Забота превращается в жертвенность и гиперопеку: вы отдаёте всё другим и остаётесь пустой. Творческий блок, пренебрежение собой.",
+"Позаботьтесь о себе так же, как заботитесь о близких.",
+"Тёплые щедрые отношения, гармония, возможность семьи и детей. Перевёрнутый — ревность и контроль.",
+"Рост доходов, признание, плодотворное сотрудничество. Перевёрнутый — застой дела и растраты."],
+["4","Император","структура · власть · границы",
+"Пора навести порядок: правила, границы, план, ответственность. Карта даёт опору и защиту, часто указывает на влиятельного мужчину или взрослую позицию внутри вас.",
+"Жёсткость, контроль, давление сверху. Или хаос: границы не держатся, и другие их нарушают.",
+"Скажите «нет» там, где давно пора, и держите слово себе.",
+"Надёжный партнёр с серьёзными намерениями, но возможен холод. Перевёрнутый — конфликты из-за власти.",
+"Карьерный рост, структура, официальное оформление дел. Перевёрнутый — давление руководства и бюрократия."],
+["5","Иерофант","традиция · учительство · вера",
+"Обратитесь к опыту: наставник, традиция, проверенная система знаний. Не изобретайте велосипед — идите к тому, кто прошёл путь. Хорошее время для учёбы и обрядов.",
+"Бунт против правил и догм, лжеучителя, навязанные убеждения. Устаревшие родовые установки мешают жить.",
+"Проверьте, чьим голосом говорит ваша «правильность».",
+"Традиционные отношения, брак, общие ценности. Перевёрнутый — давление родственников на пару.",
+"Обучение, наставничество, работа в системе. Перевёрнутый — конфликт с коллективом или нечестный наставник."],
+["6","Влюблённые","выбор · союз · сердце",
+"Перед вами выбор, и делать его нужно сердцем, а не из страха. Союз противоположностей, притяжение, искренность. Выбирайте то, что отзывается теплом в теле.",
+"Разлад, сомнения, решение из удобства. Конфликт «надо» и «хочу», зависимость в отношениях, треугольник.",
+"Не выбирайте из страха остаться одной — выбирайте из полноты.",
+"Взаимность, встреча, признание, решение о союзе. Перевёрнутый — охлаждение и несовпадение ценностей.",
+"Партнёрство и выбор между двумя предложениями. Перевёрнутый — неудачное сотрудничество."],
+["7","Колесница","движение · победа · воля",
+"Прорыв: цель ясна, препятствия преодолимы, вожжи в ваших руках. Карта обещает победу при дисциплине. Возможны дорога, переезд, смена работы — в вашу пользу.",
+"Потеря направления, агрессия, попытка контролировать неконтролируемое. Либо топчетесь, либо несётесь не туда.",
+"Оставьте одну главную цель и уберите всё, что уводит в сторону.",
+"Быстрое развитие отношений, совместная цель, переезд вдвоём. Перевёрнутый — борьба за власть в паре.",
+"Карьерный рывок, успешная поездка, победа в конкуренции. Перевёрнутый — срыв планов и спешка."],
+["8","Сила","мягкая мощь · терпение · укрощение",
+"Настоящая сила — не в давлении, а в спокойствии и любви. Вы способны укротить собственный гнев и чужую агрессию: стойкость, выносливость, мягкая власть.",
+"Сомнения в себе, подавленная ярость, ощущение бессилия. Или грубая сила там, где нужна нежность.",
+"Укрощайте ситуацию терпением, а не криком — и она сдастся.",
+"Страсть под контролем, умение принять партнёра целиком. Перевёрнутый — ревность и вспышки гнева.",
+"Устойчивость к нагрузкам, авторитет без давления. Перевёрнутый — выгорание и конфликт с сильным соперником."],
+["9","Отшельник","уединение · мудрость · поиск",
+"Время уйти в тишину: не одиночество, а сознательная пауза, чтобы услышать себя и найти свой свет. Ответы не придут из чужих советов. Период итогов.",
+"Изоляция против воли, уход от людей из страха, тягостное одиночество. Или застревание в самокопании.",
+"Побудьте одни, но назначьте срок возврата к людям.",
+"Пауза в отношениях, потребность в личном пространстве. Перевёрнутый — отчуждение и холод.",
+"Глубокая работа, исследование, экспертность, наставничество. Перевёрнутый — профессиональная изоляция."],
+["10","Колесо Фортуны","цикл · судьба · поворот",
+"Колесо повернулось: обстоятельства меняются, удача приходит внезапно, открывается новая возможность. То, что казалось концом, — начало витка.",
+"Сопротивление переменам, полоса невезения, повтор старого сценария по кругу. Вы держитесь за отжившее.",
+"Не цепляйтесь за результат — доверьтесь движению.",
+"Неожиданная встреча, поворот в отношениях, возвращение человека из прошлого. Перевёрнутый — ссоры по кругу.",
+"Удачный шанс, смена работы, внезапные деньги. Перевёрнутый — задержки и срывы договорённостей."],
+["11","Справедливость","закон · карма · истина",
+"Всё встанет по делам: честность с собой, ответственность за выбор, кармический баланс. Если поступали правильно — результат порадует. Возможны документы и решения в вашу пользу.",
+"Несправедливость, уход от ответственности, предвзятость. Или вы судите себя слишком строго и не позволяете себе жить.",
+"Поступите честно, даже если невыгодно — карма считает всё.",
+"Честный разговор, равные условия, ясность статуса. Перевёрнутый — обман и несправедливые претензии.",
+"Договоры, проверки, законные решения. Перевёрнутый — споры и риск юридических проблем."],
+["12","Повешенный","пауза · жертва · иной взгляд",
+"Ситуация зависла не случайно: нужно увидеть её под другим углом. Добровольная пауза, отказ от борьбы, взгляд снизу вверх. Иногда надо отпустить контроль, чтобы сдвинуться.",
+"Бессмысленная жертва, затяжной застой. Вы платите за то, что уже ничего не даёт, и не меняете точку зрения.",
+"Перестаньте биться в закрытую дверь — поищите открытую рядом.",
+"Отношения в подвешенном состоянии, пауза, неопределённость. Перевёрнутый — жертвенность без отдачи.",
+"Задержка проектов, вынужденный простой, время переосмысления. Перевёрнутый — упущенное время."],
+["13","Смерть","трансформация · конец · перерождение",
+"Старое умирает неизбежно: заканчивается этап, отношения, работа или образ себя. Отпустите — на освободившееся место придёт новое. Сопротивление больнее самого перехода.",
+"Вы цепляетесь за отжившее: человека, работу, образ жизни. Трансформация идёт мучительно медленно из-за страха.",
+"Проводите старое с благодарностью — и не оглядывайтесь.",
+"Конец отношений или полное их перерождение на новый уровень. Перевёрнутый — затянувшийся разрыв.",
+"Смена сферы, закрытие проекта, увольнение как освобождение. Перевёрнутый — страх уйти с нелюбимой работы."],
+["14","Умеренность","баланс · алхимия · исцеление",
+"Медленное точное смешение противоположностей: целительство, терпение, золотая середина. Всё приходит в своё время и в нужной дозе. Действуйте мягко, без крайностей.",
+"Крайности, нетерпение, излишества в еде, эмоциях, тратах. Дисбаланс между работой и отдыхом, духовным и материальным.",
+"Не торопите события: ровный шаг приведёт дальше рывка.",
+"Спокойные гармоничные отношения, взаимная подстройка, исцеление ран. Перевёрнутый — эмоциональные качели.",
+"Постепенный рост, стабильный доход, восстановление сил. Перевёрнутый — срывы из-за спешки."],
+["15","Дьявол","зависимость · тень · страсть",
+"Показывает, где вы в цепях: зависимости, страсть, токсичные связи, чужое влияние, манипуляции. Это не наказание, а приглашение посмотреть правде в глаза. Увидеть — шаг к свободе.",
+"Освобождение от привязки, прозрение, разрыв токсичной связи. Вы понимаете, чем вас держали, и выходите.",
+"Назовите свою зависимость вслух — пока она безымянна, она управляет вами.",
+"Сильная страсть с привкусом зависимости и ревности. Перевёрнутый — выход из токсичных отношений.",
+"Теневые схемы, соблазн лёгких денег, манипуляции. Перевёрнутый — разоблачение и отказ от сомнительной выгоды."],
+["16","Башня","крах · озарение · освобождение",
+"Молния бьёт в построенное на лжи: рушится не всё, а только ложный фундамент — иллюзии, неудачный союз, неустойчивое дело, чужие ожидания. Больно, но после расчистки — свобода.",
+"Крах откладывается: вы видите разрушение, но держитесь до последнего. Возможен мягкий выход, если начать перемены самим.",
+"Не спасайте то, что уже горит — спасайте себя и живое.",
+"Резкий разрыв, вскрытие правды, скандал. Перевёрнутый — затяжной кризис и попытки склеить разбитое.",
+"Потеря работы, развал проекта, вынужденная смена курса. Перевёрнутый — отсрочка неизбежного."],
+["17","Звезда","надежда · вдохновение · род",
+"После бури приходит тихий свет: надежда, исцеление, родовое благословение. Вас ведут, вы не одни. Мечта реальна, путь небыстрый, но раны затягиваются и вера возвращается.",
+"Потеря веры, разочарование, ощущение недостижимости мечты. Вы ушли в быт и выживание вместо своего неба.",
+"Вспомните мечту до страха и сделайте один маленький шаг.",
+"Светлые вдохновляющие отношения, встреча родственной души. Перевёрнутый — идеализация и холод на расстоянии.",
+"Творческий подъём, признание, долгосрочные перспективы. Перевёрнутый — потеря смысла в деле."],
+["18","Луна","иллюзия · страхи · подсознание",
+"Не всё таково, каким кажется: туман, сны, страхи, скрытые мотивы, работа подсознания. Легко принять желаемое за действительное или стать жертвой обмана. Проверяйте и чистите.",
+"Туман рассеивается: правда выходит, страхи отступают, ситуация становится ясной. Часто — после чистки или откровенного разговора.",
+"Проверяйте информацию и не принимайте важных решений ночью.",
+"Недосказанность, тайны, подозрения, отношения в тумане. Перевёрнутый — прояснение и конец обмана.",
+"Скрытые интриги, путаница в документах, неверные сведения. Перевёрнутый — раскрытие правды."],
+["19","Солнце","радость · ясность · сила",
+"Самая светлая карта: радость, успех, здоровье, признание и полная ясность. Вы видите всё как есть, и это радует. Дети, тепло, щедрость. Всё получается легко, потому что вы на своём месте.",
+"Радость приглушена: выгорание, задержка успеха, неумение принять хорошее. Иногда чрезмерный оптимизм мешает видеть риски.",
+"Позвольте себе радоваться вслух и не оправдываться за счастье.",
+"Счастливые открытые отношения, свадьба, дети, примирение. Перевёрнутый — временное охлаждение.",
+"Успех, признание, рост дохода, удачное завершение проекта. Перевёрнутый — задержка результатов."],
+["20","Суд","возрождение · зов рода · прощение",
+"Труба зовёт: время проснуться и ответить на зов. Возрождение, прощение себя и предков, итог большого цикла. Родовые истории завершаются, старая боль отпускается.",
+"Самоосуждение, отказ от призвания, незакрытые родовые истории, которые тянут. Вы слышите зов, но боитесь ответить.",
+"Простите себя и тех, кто был до вас — и сделайте шаг.",
+"Возобновление отношений, прощение, второй шанс. Перевёрнутый — старые обиды и невозможность простить.",
+"Важное решение, смена призвания, возврат к заброшенному делу. Перевёрнутый — страх перемен."],
+["21","Мир","завершение · целостность · дар",
+"Цикл завершён: гармония, полнота, признание, выход на новый уровень. Всё встало на свои места, вы получили опыт, ради которого начинали. Благоприятны завершение дел, переезд, масштаб.",
+"Незавершённость: дело не доведено до конца, осталось пара шагов. Финал затянулся из-за страха потерять привычное.",
+"Доведите начатое до конца и поблагодарите путь.",
+"Полная гармония, совместные планы, зрелый союз. Перевёрнутый — недосказанность и ощущение неполноты.",
+"Успешное завершение проекта, расширение границ, новый рынок. Перевёрнутый — незаконченные дела."]
+];
+var RK=[
+["Туз",
+"Искра и новый импульс, шанс, который нельзя упускать.",
+"Энергия заблокирована, фальстарт, упущенный шанс.",
+"Сделайте первый маленький шаг сегодня."],
+["Двойка",
+"Выбор пути и партнёрство, планирование, взгляд за горизонт.",
+"Нерешительность, страх перемен, планы на бумаге.",
+"Выберите один путь и дайте себе срок."],
+["Тройка",
+"Первые плоды, рост, поддержка близких, дорога.",
+"Задержка планов, нехватка поддержки, препятствия.",
+"Не бросайте начатое на полпути."],
+["Четвёрка",
+"Устойчивый тыл, дом, праздник, завершение этапа.",
+"Шаткое положение, конфликты в семье, потеря опоры.",
+"Укрепите базу перед новым шагом."],
+["Пятёрка",
+"Соперничество и закалка, борьба амбиций, полезный конфликт.",
+"Избегание конфликта, внутренний раздор, бессмысленная война.",
+"Решите, за что стоит бороться, а где отойти."],
+["Шестёрка",
+"Признание и заслуженный успех, добрые вести, победа.",
+"Тщеславие, незаслуженные лавры, зависть вокруг.",
+"Поблагодарите тех, кто помог."],
+["Семёрка",
+"Защита своих границ, мужество, стойкость под давлением.",
+"Сомнения, усталость, давление окружающих, сдача позиций.",
+"Держите границу спокойно — крик ослабляет."],
+["Восьмёрка",
+"Быстрое движение, новости, перемены, стремительный поток.",
+"Задержки, спешка во вред, искажённая информация.",
+"Действуйте быстро, но проверяйте факты."],
+["Девятка",
+"Стойкость на последнем рубеже, опыт, защита своего.",
+"Перегруз, паранойя, отказ от борьбы, усталость.",
+"Отдохните: стойкость без ресурса — упрямство."],
+["Десятка",
+"Завершение цикла, ноша, ответственность, род и фундамент.",
+"Сброс груза, делегирование, облегчение.",
+"Разделите груз: половину можно отдать."],
+["Паж",
+"Любопытство, вести, начало обучения, свежий импульс.",
+"Непостоянство, пустые обещания, незрелость.",
+"Учитесь, не обещая лишнего."],
+["Рыцарь",
+"Решительный рывок, смелое действие, огонь и порыв.",
+"Импульсивность, суета, конфликты на ровном месте.",
+"Направьте огонь в одну цель."],
+["Королева",
+"Тёплая сила, зрелость, забота, харизма и интуиция.",
+"Ревность, властность, эмоциональный шантаж.",
+"Будьте сильной, но не жёсткой."],
+["Король",
+"Зрелая власть, стратегия, надёжность, авторитет.",
+"Деспотизм, упрямство, холодный контроль.",
+"Ведите примером, а не приказом."]
+];
+var ST=[
+["w","Жезлы","в сфере воли, дел и страсти"],
+["c","Чаши","в чувствах, отношениях, интуиции"],
+["s","Мечи","в мыслях, словах, решениях"],
+["p","Пентакли","в деньгах, теле, быте и роде"]
+];
+var DECK=[];
+var i,j;
+for(i=0;i<MAJOR.length;i++){
+ DECK.push({
+  g:'m',
+  num:MAJOR[i][0],
+  t:MAJOR[i][1],
+  kw:MAJOR[i][2],
+  d:MAJOR[i][3],
+  r:MAJOR[i][4],
+  a:MAJOR[i][5],
+  love:MAJOR[i][6],
+  work:MAJOR[i][7],
+  suit:'Старший аркан',
+  el:'Дух · большой урок судьбы',
+  seed:i+1
+ });
+}
+for(i=0;i<ST.length;i++){
+ for(j=0;j<RK.length;j++){
+  DECK.push({
+   g:ST[i][0],
+   num:RK[j][0],
+   t:RK[j][0]+' '+ST[i][1],
+   kw:ST[i][1],
+   d:RK[j][1]+' Здесь — '+ST[i][2]+'.',
+   r:RK[j][2]+' Здесь — '+ST[i][2]+'.',
+   a:RK[j][3],
+   love:'Читается через стихию '+ST[i][1]+': '+RK[j][1].toLowerCase(),
+   work:'В делах и деньгах: '+RK[j][1].toLowerCase(),
+   suit:ST[i][1]+' · младший аркан',
+   el:ST[i][2],
+   seed:(i+1)*100+j+7
+  });
+ }
+}
+var POS={
+ 1:['Ответ на ваш вопрос'],
+ 3:['Прошлое','Настоящее','К чему идёт'],
+ 5:['Корень ситуации','Что мешает',
+  'Ваш ресурс','Совет карт','Итог']
+};
+var mode=1,order=[],drawn=[];
+var fan=document.getElementById('fan');
+var slots=document.getElementById('slots');
+var rdetail=document.getElementById('rdetail');
+var dc=document.getElementById('dc');
+var rempty=document.getElementById('rempty');
+var rtitle=document.getElementById('rtitle');
+var rhint=document.getElementById('rhint');
+var ract=document.getElementById('ract');
+function face(c,rev,cls){
+ var ic=c.g==='m'?sigil(c.seed):SICON[c.g];
+ return '<div class="fc '+(cls||'')+
+  (rev?' rev':'')+'"><div class="fi">'+
+  '<div class="num">'+esc(c.num)+'</div>'+ic+
+  '<div class="nm">'+esc(c.t)+'</div>'+
+  '<div class="su">'+(rev?'перевёрнутая':'прямая')+
+  '</div></div></div>';
+}
+var modal=document.getElementById('modal');
+var mbody=document.getElementById('mbody');
+function openCard(c,rev){
+ mbody.innerHTML=
+  '<div>'+face(c,rev,'')+'</div>'+
+  '<div>'+
+  '<div style="font-size:11px;letter-spacing:.26em;text-transform:uppercase;color:var(--muted)">'+
+  esc(c.suit)+' · '+esc(c.el)+'</div>'+
+  '<h3 style="font-size:32px;color:var(--gold2);margin:6px 0">'+
+  esc(c.t)+(rev?' <span style="font-size:17px;color:#c98ea0">(перевёрнутая)</span>':'')+
+  '</h3>'+
+  '<div class="chips">'+
+  c.kw.split(' · ').map(function(x){
+   return '<span class="chip">'+esc(x)+'</span>';
+  }).join('')+'</div>'+
+  '<div class="mrow"><b>Прямое положение</b><p>'+
+  esc(c.d)+'</p></div>'+
+  '<div class="mrow rev"><b>Перевёрнутое положение</b><p>'+
+  esc(c.r)+'</p></div>'+
+  '<div class="mrow adv"><b>Совет карты</b><p>'+
+  esc(c.a)+'</p></div>'+
+  '<div class="mrow"><b>В отношениях</b><p>'+
+  esc(c.love)+'</p></div>'+
+  '<div class="mrow"><b>В делах и деньгах</b><p>'+
+  esc(c.work)+'</p></div>'+
+  '<div style="margin-top:22px">'+
+  '<a class="btn sm" target="_blank" href="'+VK+
+  '">Разобрать с Яной</a> '+
+  '<button class="btn ghost sm" data-close>Закрыть</button>'+
+  '</div></div>';
+ modal.classList.add('on');
+ document.body.style.overflow='hidden';
+}
+modal.addEventListener('click',function(e){
+ if(e.target.hasAttribute('data-close')||
+  (e.target.closest&&e.target.closest('[data-close]'))){
+  modal.classList.remove('on');
+  document.body.style.overflow='';
+ }
+});
+document.addEventListener('keydown',function(e){
+ if(e.key==='Escape'){
+  modal.classList.remove('on');
+  document.body.style.overflow='';
+ }
+});
+function shuffle(a){
+ var k,q,t;
+ for(k=a.length-1;k>0;k--){
+  q=Math.floor(Math.random()*(k+1));
+  t=a[k];a[k]=a[q];a[q]=t;
+ }
+ return a;
+}
+function renderSlots(){
+ slots.innerHTML='';
+ var names=POS[mode];
+ for(var k=0;k<mode;k++){
+  var s=document.createElement('div');
+  s.className='slot';
+  s.innerHTML='<div class="pos">'+names[k]+
+   '</div><div id="slot'+k+'"></div>';
+  slots.appendChild(s);
+ }
+}
+function mix(){
+ order=shuffle(DECK.map(function(c,k){return k;}));
+ drawn=[];
+ dc.textContent='0';
+ rdetail.innerHTML='';
+ rempty.style.display='block';
+ ract.style.display='none';
+ rhint.style.display='none';
+ rtitle.textContent=mode===1?
+  'Ваша карта':'Ваш расклад на '+mode+' карты';
+ fan.innerHTML='';
+ renderSlots();
+ for(var k=0;k<DECK.length;k++){
+  var d=document.createElement('div');
+  d.className='bk';
+  d.textContent='✦';
+  d.setAttribute('data-pos',k);
+  if(k<drawn.length){d.classList.add('off');}
+  d.onclick=draw;
+  fan.appendChild(d);
+ }
+}
+function draw(e){
+ var pos=+e.target.getAttribute('data-pos');
+ if(pos<drawn.length){return;}
+ e.target.classList.add('off');
+ var card=DECK[order[pos]];
+ var rev=Math.random()<0.32;
+ drawn.push({c:card,rev:rev});
+ dc.textContent=drawn.length;
+ rempty.style.display='none';
+ ract.style.display='block';
+ rhint.style.display='block';
+ var se=document.getElementById('slot'+(drawn.length-1));
+ if(se){
+  se.innerHTML=face(card,rev,'');
+  se.onclick=function(){openCard(card,rev);};
+ }
+ var names=POS[mode];
+ var idx=drawn.length-1;
+ var b1=document.createElement('div');
+ b1.className='rd'+(rev?' rev':'');
+ b1.innerHTML='<b>'+names[idx]+' — '+esc(card.t)+
+  (rev?' (перевёрнутая)':'')+'</b><p>'+
+  esc(rev?card.r:card.d)+'</p>';
+ rdetail.appendChild(b1);
+ var b2=document.createElement('div');
+ b2.className='rd adv';
+ b2.innerHTML='<b>Совет аркана</b><p>'+
+  esc(card.a)+'</p>';
+ rdetail.appendChild(b2);
+ if(drawn.length===1){
+  rtitle.textContent='Выпала карта: '+card.t;
+ }
+ if(drawn.length===mode){
+  var sm=document.createElement('div');
+  sm.className='rd adv';
+  sm.innerHTML='<b>Совет расклада</b><p>Карты показали картину целиком. Хотите точную расшифровку под вашу ситуацию — напишите Яне: она разберёт расклад голосом и подскажет шаги.</p>';
+  rdetail.appendChild(sm);
+  toast('Расклад готов. Нажмите на карту, чтобы открыть полное значение.');
+ }else{
+  toast('Выпала карта «'+card.t+'». Осталось: '+
+   (mode-drawn.length)+'.');
+ }
+}
+var modes=document.querySelectorAll('.mode');
+for(i=0;i<modes.length;i++){
+ modes[i].onclick=function(){
+  for(var k=0;k<modes.length;k++){
+   modes[k].classList.remove('on');
+  }
+  this.classList.add('on');
+  mode=+this.getAttribute('data-mode');
+  mix();
+ };
+}
+document.getElementById('shuf').onclick=function(){
+ mix();
+ toast('Колода перемешана. Вытягивайте карту.');
+};
+document.getElementById('rst').onclick=function(){
+ mix();
+ toast('Новый расклад. Задайте вопрос и тяните карту.');
+};
+document.getElementById('again').onclick=function(){
+ mix();
+};
+var dcard=document.getElementById('dcard');
+var dcur=DECK[0],drev=false;
+dcard.innerHTML=face(DECK[0],false,'');
+dcard.style.cursor='pointer';
+dcard.onclick=function(){openCard(dcur,drev);};
+document.getElementById('dbtn').onclick=function(){
+ dcur=DECK[Math.floor(Math.random()*DECK.length)];
+ drev=Math.random()<0.25;
+ dcard.innerHTML=face(dcur,drev,'');
+ document.getElementById('dtext').innerHTML=
+  '<b style="color:var(--gold2);font-family:var(--serif);font-size:22px">'+
+  esc(dcur.t)+(drev?' · перевёрнутая':'')+'</b><br>'+
+  '<span style="color:var(--muted)">'+
+  esc(drev?dcur.r:dcur.d)+'</span><br>'+
+  '<span style="color:var(--gold2);font-size:14px">Совет: '+
+  esc(dcur.a)+'</span>';
+ toast('Карта дня: '+dcur.t+'. Нажмите на неё для полного значения.');
+};
+var cards=document.querySelectorAll('.card');
+for(i=0;i<cards.length;i++){
+ (function(card){
+  var tfs=card.querySelectorAll('.tariff');
+  var cbtn=card.querySelector('.cbtn');
+  var cname=card.getAttribute('data-course')||'';
+  for(var k=0;k<tfs.length;k++){
+   tfs[k].onclick=function(){
+    for(var m=0;m<tfs.length;m++){
+     tfs[m].classList.remove('sel');
+    }
+    this.classList.add('sel');
+    var p=this.getAttribute('data-p');
+    if(cbtn){
+     cbtn.textContent='Записаться · '+p;
+    }
+    toast('Курс «'+cname+'», тариф: '+p+
+     '. Нажмите «Записаться» для записи в ВК.');
+   };
+  }
+ })(cards[i]);
+}
+var TRACKS=[
+ {t:'Дар Предков',vk:VA,ext:BD},
+ {t:'Не сильная',vk:VK,ext:BN},
+ {t:'Ты — Огонь',vk:VK,ext:BD},
+ {t:'Невидимая Нить',vk:VK,ext:BN}
+];
+var ppanel=document.getElementById('ppanel');
+var pframe=document.getElementById('pframe');
+var pvk=document.getElementById('pvk');
+var now=document.getElementById('now');
+var tracks=document.querySelectorAll('.track');
+function playTrack(n){
+ var tr=TRACKS[n];
+ for(var k=0;k<tracks.length;k++){
+  tracks[k].classList.toggle('play',k===n);
+  var ico=tracks[k].querySelector('.ico');
+  if(ico){
+   ico.innerHTML=k===n?
+    '<rect x="7" y="5" width="3.4" height="14"/><rect x="13.6" y="5" width="3.4" height="14"/>':
+    '<path d="M8 5v14l11-7z"/>';
+  }
+ }
+ ppanel.classList.add('on');
+ pframe.innerHTML='<iframe src="'+tr.vk+
+  '" allow="autoplay; encrypted-media" '+
+  'title="ATU-YA" loading="lazy"></iframe>';
+ now.textContent='Сейчас играет: ATU-YA — '+tr.t;
+ pvk.href=tr.ext;
+ pvk.textContent=tr.vk===VA?
+  'Открыть трек ВКонтакте':'Слушать на площадках';
+ ppanel.scrollIntoView({behavior:'smooth',block:'nearest'});
+ toast('Включаю «'+tr.t+'». Если плеер не запустился — кнопка справа.');
+}
+for(i=0;i<tracks.length;i++){
+ (function(el){
+  el.onclick=function(){
+   playTrack(+el.getAttribute('data-i'));
+  };
+ })(tracks[i]);
+}
+var plays=document.querySelectorAll('[data-play]');
+for(i=0;i<plays.length;i++){
+ (function(el){
+  el.onclick=function(){
+   playTrack(+el.getAttribute('data-play'));
+  };
+ })(plays[i]);
+}
+var rms=document.querySelectorAll('.rm');
+for(i=0;i<rms.length;i++){
+ rms[i].onclick=function(){
+  var b=this.closest('.post').querySelector('.pbody');
+  var closed=b.classList.toggle('col');
+  this.textContent=closed?'Читать полностью':'Свернуть';
+ };
+}
+var app=document.getElementById('app');
+var rpage=document.getElementById('rpage');
+var rmas=document.getElementById('rmas');
+var rfil=document.getElementById('rfil');
+var rvs=rmas.querySelectorAll('.review');
+var svcs=[];
+for(i=0;i<rvs.length;i++){
+ var sv=rvs[i].getAttribute('data-svc');
+ if(svcs.indexOf(sv)<0){svcs.push(sv);}
+}
+var rfcur='all';
+function renderFil(){
+ rfil.innerHTML='';
+ var all=document.createElement('button');
+ all.className='rf'+(rfcur==='all'?' on':'');
+ all.textContent='Все отзывы · '+rvs.length;
+ all.onclick=function(){rfcur='all';applyFil();};
+ rfil.appendChild(all);
+ for(var k=0;k<svcs.length;k++){
+  (function(s){
+   var b=document.createElement('button');
+   b.className='rf'+(rfcur===s?' on':'');
+   b.textContent=s;
+   b.onclick=function(){rfcur=s;applyFil();};
+   rfil.appendChild(b);
+  })(svcs[k]);
+ }
+}
+function applyFil(){
+ renderFil();
+ for(var k=0;k<rvs.length;k++){
+  var sv=rvs[k].getAttribute('data-svc');
+  rvs[k].style.display=
+   (rfcur==='all'||sv===rfcur)?'':'none';
+ }
+}
+renderFil();
+function openRev(){
+ app.style.display='none';
+ rpage.classList.add('on');
+ window.scrollTo(0,0);
+}
+function closeRev(){
+ rpage.classList.remove('on');
+ app.style.display='block';
+ window.scrollTo(0,0);
+}
+var revBtns=document.querySelectorAll('[data-reviews]');
+for(i=0;i<revBtns.length;i++){
+ revBtns[i].onclick=openRev;
+}
+document.getElementById('back').onclick=closeRev;
+document.getElementById('back2').onclick=closeRev;
+var homes=document.querySelectorAll('[data-home]');
+for(i=0;i<homes.length;i++){
+ homes[i].addEventListener('click',function(e){
+  if(rpage.classList.contains('on')){
+   e.preventDefault();
+   closeRev();
+  }
+ });
+}
+document.getElementById('cform').addEventListener('submit',function(e){
+ e.preventDefault();
+ var n=document.getElementById('fn').value.trim();
+ var t=document.getElementById('ft').value;
+ var d=document.getElementById('fd').value.trim();
+ var m=document.getElementById('fm').value.trim();
+ var txt='Здравствуйте, Яна! Меня зовут: '+
+  (n||'—')+'. Интересует: '+t+
+  '. Дата рождения: '+(d||'—')+
+  '. Вопрос: '+(m||'—');
+ try{localStorage.setItem('atu_ya_request',txt);}catch(err){}
+ window.open(VK,'_blank','noopener');
+ toast('Открываю ВКонтакте — вставьте текст запроса в сообщение Яне.');
+});
+var toastEl=document.getElementById('toast');
+var toastTimer;
+function toast(msg){
+ toastEl.textContent=msg;
+ toastEl.classList.add('on');
+ clearTimeout(toastTimer);
+ toastTimer=setTimeout(function(){
+  toastEl.classList.remove('on');
+ },4600);
+}
+var burger=document.getElementById('burger');
+var menu=document.getElementById('menu');
+burger.onclick=function(){
+ burger.classList.toggle('open');
+ menu.classList.toggle('open');
+};
+var mlinks=menu.querySelectorAll('a,button');
+for(i=0;i<mlinks.length;i++){
+ mlinks[i].addEventListener('click',function(){
+  burger.classList.remove('open');
+  menu.classList.remove('open');
+ });
+}
+var secs=app.querySelectorAll('section[id]');
+window.addEventListener('scroll',function(){
+ if(rpage.classList.contains('on')){return;}
+ var y=window.scrollY+140;
+ var act=secs[0].id;
+ for(var k=0;k<secs.length;k++){
+  if(y>=secs[k].offsetTop){act=secs[k].id;}
+ }
+ var as=menu.querySelectorAll('a');
+ for(var k=0;k<as.length;k++){
+  as[k].classList.toggle('on',
+   as[k].getAttribute('href')==='#'+act);
+ }
+},{passive:true});
+var rvels=document.querySelectorAll('.rv');
+for(i=0;i<rvels.length;i++){
+ rvels[i].classList.add('arm');
+}
+if('IntersectionObserver' in window){
+ var io=new IntersectionObserver(function(es){
+  es.forEach(function(e){
+   if(e.isIntersecting){
+    e.target.classList.add('in');
+    io.unobserve(e.target);
+   }
+  });
+ },{threshold:0.08});
+ for(i=0;i<rvels.length;i++){io.observe(rvels[i]);}
+}else{
+ for(i=0;i<rvels.length;i++){
+  rvels[i].classList.remove('arm');
+ }
+}
+mix();
+</script>
+<style>
+.pmodal{
+ display:none;
+ position:fixed;inset:0;
+ z-index:200;
+ align-items:center;
+ justify-content:center;
+ padding:20px;
+}
+.pmbg{position:absolute;inset:0;background:rgba(4,1,3,.92)}
+.pmbox{
+ position:relative;
+ width:min(430px,94vw);
+ max-height:92vh;overflow:auto;
+ border:1px solid var(--line);
+ background:linear-gradient(165deg,#1b0711,#0b0408);
+ padding:30px 26px;text-align:center;
+}
+.pmclose{
+ position:absolute;top:10px;right:10px;
+ width:36px;height:36px;border-radius:50%;
+ cursor:pointer;
+ background:rgba(90,15,32,.6);
+ border:1px solid var(--line);
+ color:var(--gold2);font-size:17px;
+}
+.pmbox h3{font-size:26px;color:var(--gold2);margin-bottom:6px}
+.pmsum{font-family:var(--serif);font-size:44px;color:var(--cream);margin:6px 0 2px}
+.pmname{font-size:13px;color:var(--muted);margin-bottom:16px}
+.pmqr{
+ width:min(280px,70vw);
+ margin:0 auto;background:#fff;
+ padding:10px;border-radius:8px;display:block;
+}
+.pmsteps{
+ text-align:left;color:var(--muted);
+ font-size:13.5px;margin:16px 0 0;padding-left:18px;
+}
+.pmsteps li{margin-bottom:5px}
+.pmnote{
+ margin-top:14px;font-size:12px;color:#9d8480;
+ border-top:1px solid var(--line);padding-top:12px;
+}
+</style>
+
+<div class="pmodal" id="pmodal">
+ <div class="pmbg" data-pclose></div>
+ <div class="pmbox">
+  <button class="pmclose" data-pclose>✕</button>
+  <h3>Оплата по СБП</h3>
+  <div class="pmsum" id="pmsum">0 ₽</div>
+  <div class="pmname">Получатель: Афанасьева Яна Ибрагимовна · самозанятая</div>
+  <img class="pmqr" src="qr.png" alt="QR-код для оплаты по СБП">
+  <ol class="pmsteps">
+   <li>Откройте приложение вашего банка</li>
+   <li>Выберите «Оплата по QR-коду» или сканер</li>
+   <li>Наведите камеру на код выше</li>
+   <li>Проверьте сумму и получателя, подтвердите оплату</li>
+  </ol>
+  <div class="pmnote">После оплаты Яна сформирует чек самозанятого и пришлёт его вам в личные сообщения.</div>
+ </div>
+</div>
+
+<script>
+(function(){
+ var modal=document.getElementById('pmodal');
+ var sumEl=document.getElementById('pmsum');
+ function fmt(n){
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' \u20BD';
+ }
+ function openPay(n){
+  sumEl.textContent=fmt(n);
+  modal.style.display='flex';
+  document.body.style.overflow='hidden';
+ }
+ function closePay(){
+  modal.style.display='none';
+  document.body.style.overflow='';
+ }
+ modal.addEventListener('click',function(e){
+  if(e.target.hasAttribute('data-pclose')||
+   (e.target.closest&&e.target.closest('[data-pclose]'))){
+   closePay();
+  }
+ });
+ document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){closePay();}
+ });
+ function cardSum(card,isCourse){
+  var el=isCourse?
+   card.querySelector('.tariff.sel .tt i'):
+   card.querySelector('.price > b');
+  if(!el){return 0;}
+  return parseInt(el.textContent.replace(/[^\d]/g,''),10)||0;
+ }
+ var cards=document.querySelectorAll('#services .card, #courses .card');
+ for(var i=0;i<cards.length;i++){
+  (function(card){
+   var isCourse=!!card.closest('#courses');
+   var btn=card.querySelector('.cbtn')||
+    card.querySelector('a.btn.wine')||
+    card.querySelector('.paybtn');
+   if(!btn){
+    var all=card.querySelectorAll('.btn');
+    if(all.length){btn=all[all.length-1];}
+   }
+   if(!btn){return;}
+   if(btn.tagName!=='BUTTON'){
+    var nb=document.createElement('button');
+    nb.className=btn.className;
+    btn.parentNode.replaceChild(nb,btn);
+    btn=nb;
+   }
+   btn.removeAttribute('href');
+   btn.removeAttribute('target');
+   btn.type='button';
+   btn.textContent='\u041E\u043F\u043B\u0430\u0442\u0438\u0442\u044C \u043F\u043E \u0421\u0411\u041F';
+   btn.onclick=function(){
+    openPay(cardSum(card,isCourse));
+   };
+  })(cards[i]);
+ }
+})();
+</script>
+<script>
+(function(){
+ var VK='https://vk.ru/yana_afanaseva86';
+ var QR_MAP={
+  1200:'qr-1200.png',3000:'qr-3000.png',4000:'qr-4000.png',
+  4500:'qr-4500.png',5000:'qr-5000.png',5500:'qr-5500.png',
+  6500:'qr-6500.png',7500:'qr-7500.png',8000:'qr-8000.png',
+  9500:'qr-9500.png',10000:'qr-10000.png',12000:'qr-12000.png',
+  13000:'qr-13000.png',15000:'qr-15000.png',18000:'qr-18000.png',
+  24000:'qr-24000.png',25000:'qr-25000.png',28000:'qr-28000.png',
+  30000:'qr-30000.png',35000:'qr-35000.png'
+ };
+ var old=document.querySelectorAll('.pmodal');
+ for(var o=0;o<old.length;o++){old[o].parentNode.removeChild(old[o]);}
+ var wrap=document.createElement('div');
+ wrap.className='pmodal';
+ wrap.id='pmodal2';
+ wrap.innerHTML=
+  '<div class="pmbg" data-pclose></div>'+
+  '<div class="pmbox">'+
+  '<button class="pmclose" data-pclose>\u2715</button>'+
+  '<h3>\u041E\u043F\u043B\u0430\u0442\u0430 \u043F\u043E \u0421\u0411\u041F</h3>'+
+  '<div class="pmsum" id="pmsum2">0 \u20BD</div>'+
+  '<div class="pmname">\u041F\u043E\u043B\u0443\u0447\u0430\u0442\u0435\u043B\u044C: \u0410\u0444\u0430\u043D\u0430\u0441\u044C\u0435\u0432\u0430 \u042F\u043D\u0430 \u0418\u0431\u0440\u0430\u0433\u0438\u043C\u043E\u0432\u043D\u0430 \u00B7 \u0441\u0430\u043C\u043E\u0437\u0430\u043D\u044F\u0442\u0430\u044F</div>'+
+  '<img class="pmqr" id="pmqr2" src="qr.png" alt="QR-\u043A\u043E\u0434 \u0434\u043B\u044F \u043E\u043F\u043B\u0430\u0442\u044B \u043F\u043E \u0421\u0411\u041F">'+
+  '<ol class="pmsteps">'+
+  '<li>\u041E\u0442\u043A\u0440\u043E\u0439\u0442\u0435 \u043F\u0440\u0438\u043B\u043E\u0436\u0435\u043D\u0438\u0435 \u0431\u0430\u043D\u043A\u0430 \u0438 \u0432\u044B\u0431\u0435\u0440\u0438\u0442\u0435 \u00AB\u041E\u043F\u043B\u0430\u0442\u0430 \u043F\u043E QR-\u043A\u043E\u0434\u0443\u00BB</li>'+
+  '<li>\u041D\u0430\u0432\u0435\u0434\u0438\u0442\u0435 \u043A\u0430\u043C\u0435\u0440\u0443 \u043D\u0430 \u043A\u043E\u0434 \u2014 \u0441\u0443\u043C\u043C\u0430 \u043F\u043E\u0434\u0441\u0442\u0430\u0432\u0438\u0442\u0441\u044F \u0441\u0430\u043C\u0430</li>'+
+  '<li>\u041F\u043E\u0434\u0442\u0432\u0435\u0440\u0434\u0438\u0442\u0435 \u043E\u043F\u043B\u0430\u0442\u0443</li>'+
+  '<li>\u041D\u0430\u0436\u043C\u0438\u0442\u0435 \u043A\u043D\u043E\u043F\u043A\u0443 \u043D\u0438\u0436\u0435 \u0438 \u043F\u0440\u0438\u043B\u043E\u0436\u0438\u0442\u0435 \u0441\u043A\u0440\u0438\u043D\u0448\u043E\u0442 \u043E\u043F\u043B\u0430\u0442\u044B \u0432 \u0441\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u0438</li>'+
+  '</ol>'+
+  '<p style="margin:14px 0 0"><a class="btn" target="_blank" href="'+VK+'">'+
+  '\u042F \u043E\u043F\u043B\u0430\u0442\u0438\u043B(\u0430) \u2014 \u043E\u0442\u043F\u0440\u0430\u0432\u0438\u0442\u044C \u0441\u043A\u0440\u0438\u043D\u0448\u043E\u0442 \u042F\u043D\u0435</a></p>'+
+  '</div>';
+ document.body.appendChild(wrap);
+ var modal=document.getElementById('pmodal2');
+ var sumEl=document.getElementById('pmsum2');
+ var qrEl=document.getElementById('pmqr2');
+ function fmt(n){
+  return String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ')+' \u20BD';
+ }
+ function openPay(n){
+  sumEl.textContent=fmt(n);
+  qrEl.src=QR_MAP[n]||'qr.png';
+  modal.style.display='flex';
+  document.body.style.overflow='hidden';
+ }
+ function closePay(){
+  modal.style.display='none';
+  document.body.style.overflow='';
+ }
+ modal.addEventListener('click',function(e){
+  if(e.target.hasAttribute('data-pclose')||
+   (e.target.closest&&e.target.closest('[data-pclose]'))){
+   closePay();
+  }
+ });
+ document.addEventListener('keydown',function(e){
+  if(e.key==='Escape'){closePay();}
+ });
+ function cardSum(card,isCourse){
+  var el=isCourse?
+   card.querySelector('.tariff.sel .tt i'):
+   card.querySelector('.price > b');
+  if(!el){return 0;}
+  return parseInt(el.textContent.replace(/[^\d]/g,''),10)||0;
+ }
+ var cards=document.querySelectorAll('#services .card, #courses .card');
+ for(var i=0;i<cards.length;i++){
+  (function(card){
+   var isCourse=!!card.closest('#courses');
+   var btn=card.querySelector('.paybtn')||
+    card.querySelector('.cbtn')||
+    card.querySelector('a.btn.wine');
+   if(!btn){
+    var all=card.querySelectorAll('.btn');
+    if(all.length){btn=all[all.length-1];}
+   }
+   if(!btn){return;}
+   if(btn.tagName!=='BUTTON'){
+    var nb=document.createElement('button');
+    nb.className=btn.className;
+    btn.parentNode.replaceChild(nb,btn);
+    btn=nb;
+   }
+   btn.removeAttribute('href');
+   btn.removeAttribute('target');
+   btn.type='button';
+   btn.className=btn.className+' paybtn';
+   btn.textContent='\u041E\u043F\u043B\u0430\u0442\u0438\u0442\u044C \u043F\u043E \u0421\u0411\u041F';
+   btn.onclick=function(){
+    openPay(cardSum(card,isCourse));
+   };
+  })(cards[i]);
+ }
+})();
+</script>
+<script>
+(function(){
+ var q=document.getElementById('pmqr2');
+ if(q){
+  q.addEventListener('error',function(){
+   if(q.getAttribute('data-fb')!=='1'){
+    q.setAttribute('data-fb','1');
+    q.src='qr.png';
+   }
+  });
+ }
+})();
+</script>
+<script>
+(function(){
+ var q=document.getElementById('pmqr2');
+ if(q){
+  q.addEventListener('error',function(){
+   var cur=q.getAttribute('src')||'';
+   if(cur!=='qr.png'){
+    q.src='qr.png';
+   }
+  });
+ }
+})();
+</script>
+<style>
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:#0d0509}
+::-webkit-scrollbar-thumb{
+ background:linear-gradient(#a01c33,#5a0f20);
+ border-radius:8px;
+ border:2px solid #0d0509;
+}
+::-webkit-scrollbar-thumb:hover{background:#a01c33}
+html{
+ scrollbar-color:#7d1428 #0d0509;
+ scrollbar-width:thin;
+}
+</style>
+</body>
+</html>
